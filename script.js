@@ -1,3 +1,3 @@
 function test(){
-  document.getElementById("test").value = "test2";
+  document.getElementById("test").innerText = "test2";
 }
