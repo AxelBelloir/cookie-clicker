@@ -23,3 +23,37 @@
 .img-reduite {
   transform: translateY(-50%) scale(0.8) !important;
 }
+
+/* ----- Compteur Cook ----- */
+
+.compteur, .compteurSec{
+  color:black;
+  font-weight:bold;
+}
+.compteur{
+  position:absolute;
+  left:1%;
+  top:40%;
+  transform: translateY(-50%);
+}
+.compteurSec{
+  position:absolute;
+  left:1%;
+  top:42%;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
