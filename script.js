@@ -1,8 +1,11 @@
 const image = document.getElementById('imgCouvreChef');
 
 image.addEventListener('click', function() {
-    alert("Vous avez cliqué sur l'image !");
-    // Placez ici le reste de votre code
+    this.classList.add('img-reduite');
+
+    setTimeout(() => {
+        this.classList.remove('img-reduite');
+    }, 500);
 });
 
 
