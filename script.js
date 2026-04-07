@@ -15,8 +15,8 @@ setInterval(() => {
     nmbCook += nmbCookSec;
 }, 1000);
 setInterval(() => {
-    document.getElementById('compteur').innerText = nmbCook + "Cook";
-    document.getElementById('compteurSec').innerText = nmbCookSec + "Cook";
+    document.getElementById('compteur').innerText = nmbCook + " Cook";
+    document.getElementById('compteurSec').innerText = nmbCookSec + " Cook/s";
 }, 0);
 
 
