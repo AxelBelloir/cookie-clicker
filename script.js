@@ -16,7 +16,7 @@ async function callAPI(body = {},endpoint){
     }
 }
 
-function test(){
-  res = callAPI({},"test")
+async function test(){
+  const res = avait callAPI({},"test")
   document.getElementById("test").innerText = res.message;
 }
