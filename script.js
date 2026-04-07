@@ -1,6 +1,7 @@
 const image = document.getElementById('imgCouvreChef');
 let nmbCook = 0;
 let cookForClick = 1;
+let nmbCookSec = 0;
 
 image.addEventListener('click', function() {
     this.classList.add('img-reduite');
@@ -10,6 +11,11 @@ image.addEventListener('click', function() {
         this.classList.remove('img-reduite');
     }, 500);
 });
+
+setInterval(() => {
+    nmbCook += nmbCookSec;
+    document.getElementById('compteur').innerText = nmbCook;
+}, 1000);
 
 
 
