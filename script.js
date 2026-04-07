@@ -6,7 +6,6 @@ let nmbCookSec = 0;
 image.addEventListener('click', function() {
     this.classList.add('img-reduite');
     nmbCook = nmbCook + cookForClick;
-    console.log(nmbCook);
     setTimeout(() => {
         this.classList.remove('img-reduite');
     }, 500);
@@ -14,8 +13,11 @@ image.addEventListener('click', function() {
 
 setInterval(() => {
     nmbCook += nmbCookSec;
-    document.getElementById('compteur').innerText = nmbCook + "Cook";
 }, 1000);
+setInterval(() => {
+    document.getElementById('compteur').innerText = nmbCook + "Cook";
+    document.getElementById('compteurSec').innerText = nmbCookSec + "Cook";
+}, 0);
 
 
 
