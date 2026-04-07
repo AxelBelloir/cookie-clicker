@@ -3,7 +3,7 @@
 
 /* ----- Couvre chef ----- */
 
-.imgCouvreChef{
+.imgCouvreChef, .butCouvreChef{
   position:absolute;
   left:1%;
   top:50%;
