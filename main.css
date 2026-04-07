@@ -3,11 +3,23 @@
 
 /* ----- Couvre chef ----- */
 
-.imgCouvreChef, .butCouvreChef{
+.imgCouvreChef{
+  
+  /* Position */
   position:absolute;
   left:1%;
   top:50%;
   transform: translateY(-50%);
+
+  /* Taille */
   width:200px;
   height:auto;
+
+  /* Autre */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.img-reduite {
+  transform: translateY(-50%) scale(0.8) !important;
 }
