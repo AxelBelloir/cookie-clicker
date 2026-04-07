@@ -29,17 +29,18 @@
 .compteur, .compteurSec{
   color:black;
   font-weight:bold;
+  text-align: center;
 }
 .compteur{
   position:absolute;
-  left:1%;
-  top:40%;
+  left:5%;
+  top:30%;
   transform: translateY(-50%);
 }
 .compteurSec{
   position:absolute;
-  left:1%;
-  top:42%;
+  left:5%;
+  top:31%;
   transform: translateY(-50%);
 }
 
