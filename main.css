@@ -33,8 +33,8 @@
 }
 .compteur{
   position:absolute;
-  left:5%;
-  top:30%;
+  left:7%;
+  top:28%;
   transform: translateY(-50%);
 }
 .compteurSec{
