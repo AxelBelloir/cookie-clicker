@@ -8,16 +8,31 @@ image.addEventListener('click', function() {
     nmbCook = nmbCook + cookForClick;
     setTimeout(() => {
         this.classList.remove('img-reduite');
-    }, 500);
+    }, 100);
 });
 
 setInterval(() => {
     nmbCook += nmbCookSec;
 }, 1000);
 setInterval(() => {
-    document.getElementById('compteur').innerText = nmbCook + " Cook";
+    let displayCook = nmbCook;
+    let unite = "";
+    let uniteNames = ["", " million", " billion", " trillion", " quadrillion"];
+    if (nmbCook > 999999) {
+        let i = 0;
+        let tempCook = nmbCook;
+        
+        while (tempCook >= 1000000 && i < uniteNames.length - 1) {
+            tempCook = Math.floor(tempCook / 1000000); // Division entière
+            i++;
+        }
+        displayCook = tempCook;
+        unite = uniteNames[i];
+    }
+
+    document.getElementById('compteur').innerText = displayCook + unite + " Cook";
     document.getElementById('compteurSec').innerText = nmbCookSec + " Cook/s";
-}, 0);
+}, 100);
 
 
 
