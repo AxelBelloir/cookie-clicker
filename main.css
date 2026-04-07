@@ -7,7 +7,7 @@
   
   /* Position */
   position:absolute;
-  left:1%;
+  left:16px;
   top:50%;
   transform: translateY(-50%);
 
@@ -33,15 +33,17 @@
 }
 .compteur{
   position:absolute;
-  left:7%;
+  left:108px;
   top:28%;
   transform: translateY(-50%);
+  transform: translateX(-50%);
 }
 .compteurSec{
   position:absolute;
-  left:5%;
+  left:108px;
   top:31%;
   transform: translateY(-50%);
+  transform: translateX(-50%);
 }
 
 
