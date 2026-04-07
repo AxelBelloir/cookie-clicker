@@ -14,7 +14,7 @@ image.addEventListener('click', function() {
 
 setInterval(() => {
     nmbCook += nmbCookSec;
-    document.getElementById('compteur').innerText = nmbCook;
+    document.getElementById('compteur').innerText = nmbCook + "Cook";
 }, 1000);
 
 
