@@ -1,5 +1,18 @@
-const API_URL = "https://cookie-clicker-l255.onrender.com/api";
+const image = document.getElementById('imgCouvreChef');
 
+image.addEventListener('click', function() {
+    alert("Vous avez cliqué sur l'image !");
+    // Placez ici le reste de votre code
+});
+
+
+
+
+
+
+/* ==================== API ==================== */
+
+const API_URL = "https://cookie-clicker-l255.onrender.com/api";
 
 async function callAPI(body = {},endpoint){
   try {
@@ -16,7 +29,4 @@ async function callAPI(body = {},endpoint){
     }
 }
 
-async function test(){
-  const res = await callAPI({},"test")
-  document.getElementById("test").innerText = res.message;
-}
+
