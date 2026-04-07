@@ -1,3 +1,13 @@
-.test{
-  color:red;
+
+/* =============== MAIN =============== */
+
+/* ----- Couvre chef ----- */
+
+.imgCouvreChef{
+  position:absolute;
+  left:1%;
+  top:50%;
+  transform: translateY(-50%);
+  width:200px;
+  height:auto;
 }
