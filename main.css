@@ -53,11 +53,9 @@
 
 .machine{
   width:25%;
-  heigth:90%;
+  heigth:100%;
   position:absolute;
   right:0px;
-  top:50%;
-  transform:translateY(-50%);
 }
 
 
@@ -76,6 +74,8 @@
 }
 .patesDiv{
   background-color:red;
+  heigth:10%;
+  width:100%;
 }
 .patesImg{
   heigth:80%;
