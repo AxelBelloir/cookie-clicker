@@ -51,7 +51,14 @@
 
 /* ----- DIV ----- */
 
-
+.machine{
+  width:25%;
+  heigth:90%;
+  position:absolute;
+  right:0px;
+  top:50%;
+  transform:translateY(-50%);
+}
 
 
 /* ----- Pates ----- */
