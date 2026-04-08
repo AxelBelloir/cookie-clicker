@@ -64,15 +64,13 @@
   position:absolute;
   right:0px;
 }
-
+.but-machine{
+  height:100%;
+  width:100%;
+}
 
 /* ----- Pates ----- */
 
-.patesBut{
-  height:100%;
-  width:100%;
-  background:none;
-}
 .patesP{
   position:absolute;
 }
