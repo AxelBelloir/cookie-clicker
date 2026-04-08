@@ -67,6 +67,7 @@
 .but-machine{
   height:100%;
   width:100%;
+  background:none;
 }
 
 /* ----- Pates ----- */
@@ -87,7 +88,7 @@
   display:flex;
   flex-direction:column;
   gam:10px;
-  
+  border-radius:5px;
 }
 .patesImg{
   height:80%;
