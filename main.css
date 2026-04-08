@@ -47,15 +47,33 @@
 }
 
 
+/* =============== MACHINE =============== */
+
+/* ----- DIV ----- */
 
 
 
 
+/* ----- Pates ----- */
 
-
-
-
-
+.patesBut{
+  heigth:100%;
+  width:100%;
+  background:none;
+}
+.patesP{
+  position:absolute;
+}
+.patesCompt{
+  position:absolute;
+}
+.patesDiv{
+  background-color:red;
+}
+.patesImg{
+  heigth:80%;
+  width:auto;
+}
 
 
 
