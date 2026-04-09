@@ -69,9 +69,11 @@
 
 .patesP{
   position:absolute;
+  pointer-events: none;
 }
 .patesCompt{
   position:absolute;
+  pointer-events: none;
 }
 .patesDiv{
   height:10%;
