@@ -65,7 +65,7 @@ window.machineBuy = function(machineChoose){
     return;
 }
 function UPDATE(updater){
-    const machineId = [["patesPrix","patesCompt"]];
+    const machineId = [["patesCompt","patesPrix"]];
     for(let i = 0; i < machineId.length;++i){
         for(let a = 0; a < machineId[i].length;++a){
             document.getElementById(machineId[i][a]).innerText = updater[i][a];
