@@ -71,6 +71,7 @@
   position:absolute;
   left: 15%;
   top:20%;
+  z-index:200;
   transform:translateY(-50%);
   pointer-events: none;
 }
@@ -78,6 +79,7 @@
   position:absolute;
   left: 25%;
   top:50%;
+    z-index:200;
   transform:translateY(-50%);
   pointer-events: none;
 }
@@ -85,6 +87,7 @@
   position:absolute;
   right: 5%;
   bottom:50%;
+  z-index:200;
   transform:translateY(-50%);
   font-weight:bold;
   font-size:25px;
