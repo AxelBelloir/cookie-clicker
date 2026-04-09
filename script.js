@@ -57,12 +57,22 @@ window.machineBuy = function(machineChoose){
     for(let i =0; i < machine.length;++i){
         if(machine[i][0] == machineChoose[0]){
             machine[i][2] = Math.ceil(machine[i][2] * 1.15);
+            machine[i][1] = machine[i][1] + 1;
+            UPDATE([[machine[i][1],machine[i][2]]]);
             break;
         }
     }
     return;
 }
-
+function UPDATE(updater){
+    const machineId = [["patesPrix","patesCompt"]];
+    for(let i = 0; i < machineId.length;++i){
+        for(let a = 0; a < machineId[i].length;++a){
+            document.getElementById(machineId[i][a]).innerText = updater[i][a];
+        }
+    }
+    return;
+}
 
 
 
