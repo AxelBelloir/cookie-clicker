@@ -35,7 +35,7 @@ setInterval(() => {
     document.getElementById('compteurSec').innerText = nmbCookSec + " Cook/s";
 }, 100);
 
-function machineBuy(machineChoose){
+window.function machineBuy(machineChoose){
     let TRUEFALSE = false;
     for(let i =0; i < machine.length;++i){
         if(machine[i][0] == machineChoose){
