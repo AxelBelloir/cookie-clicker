@@ -35,7 +35,7 @@ setInterval(() => {
     document.getElementById('compteurSec').innerText = nmbCookSec + " Cook/s";
 }, 100);
 
-function machineBuy(let machineChoose){
+function machineBuy(machineChoose){
     let TRUEFALSE = false;
     for(let i =0; i < machine.length;++i){
         if(machine[i][0] == machineChoose){
@@ -48,12 +48,19 @@ function machineBuy(let machineChoose){
         console.log("Machine : "+ machineChoose + " : inconnue");
         return;
     }
-    if( cook < machine ){
-        console.log("Vous n'avez pas asser d'argent" + cook + " < " + machineChoose[2]);
+    if( nmbCook < machine[2] ){
+        console.log("Vous n'avez pas asser d'argent" + nmbCook + " < " + machineChoose[2]);
         return;
     }
-    cook = cook - machineChoose[2];
+    nmbCook = nmbCook - machineChoose[2];
     nmbCookSec = nmbCookSec + machineChoose[1];
+    for(let i =0; i < machine.length;++i){
+        if(machine[i][0] == machineChoose[0]){
+            machine[i][2] = machine[i][2] * 1.15;
+            break;
+        }
+    }
+    return;
 }
 
 
