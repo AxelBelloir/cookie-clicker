@@ -2,6 +2,7 @@ const image = document.getElementById('imgCouvreChef');
 let nmbCook = 0;
 let cookForClick = 1;
 let nmbCookSec = 0;
+let machine = [["pates",1,50]];
 
 image.addEventListener('click', function() {
     this.classList.add('img-reduite');
@@ -34,7 +35,26 @@ setInterval(() => {
     document.getElementById('compteurSec').innerText = nmbCookSec + " Cook/s";
 }, 100);
 
-
+function machineBuy(let machineChoose){
+    let TRUEFALSE = false;
+    for(let i =0; i < machine.length;++i){
+        if(machine[i][0] == machineChoose){
+            machineChoose = machine[i];
+            TRUEFALSE = true;
+            break;
+        }
+    }
+    if(!TRUEFALSE){
+        console.log("Machine : "+ machineChoose + " : inconnue");
+        return;
+    }
+    if( cook < machine ){
+        console.log("Vous n'avez pas asser d'argent" + cook + " < " + machineChoose[2]);
+        return;
+    }
+    cook = cook - machineChoose[2];
+    nmbCookSec = nmbCookSec + machineChoose[1];
+}
 
 
 
