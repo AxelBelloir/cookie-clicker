@@ -85,10 +85,9 @@
 }
 .patesCompt{
   position:absolute;
-  right: 5%;
-  bottom:50%;
+  left:0px;
+  bottom:0px;
   z-index:200;
-  transform:translateY(-50%);
   font-weight:bold;
   font-size:25px;
   font-family:Garamond;
