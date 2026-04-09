@@ -71,21 +71,21 @@
   position:absolute;
   left: 5%;
   top:50%;
-  transform:translateY(50%);
+  transform:translateY(-50%);
   pointer-events: none;
 }
 .patesPrix{
   position:absolute;
-  left: 15%;
+  left: 25%;
   top:50%;
-  transform:translateY(50%);
+  transform:translateY(-50%);
   pointer-events: none;
 }
 .patesCompt{
   position:absolute;
   right: 5%;
   top:50%;
-  transform:translateY(50%);
+  transform:translateY(-50%);
   pointer-events: none;
 }
 .patesDiv{
