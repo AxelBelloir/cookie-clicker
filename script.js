@@ -48,7 +48,7 @@ function machineBuy(machineChoose){
         console.log("Machine : "+ machineChoose + " : inconnue");
         return;
     }
-    if( nmbCook < machine[2] ){
+    if( nmbCook < machineChoose[2] ){
         console.log("Vous n'avez pas asser d'argent" + nmbCook + " < " + machineChoose[2]);
         return;
     }
