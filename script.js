@@ -56,7 +56,7 @@ function machineBuy(machineChoose){
     nmbCookSec = nmbCookSec + machineChoose[1];
     for(let i =0; i < machine.length;++i){
         if(machine[i][0] == machineChoose[0]){
-            machine[i][2] = machine[i][2] * 1.15;
+            machine[i][2] = Math.ceil(machine[i][2] * 1.15);
             break;
         }
     }
