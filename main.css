@@ -68,21 +68,21 @@
 /* ----- Pates ----- */
 
 .patesP{
-  position:absolute;
+  position:relative;
   left: 15%;
   top:20%;
   transform:translateY(-50%);
   pointer-events: none;
 }
 .patesPrix{
-  position:absolute;
+  position:relative;
   left: 25%;
   top:50%;
   transform:translateY(-50%);
   pointer-events: none;
 }
 .patesCompt{
-  position:absolute;
+  position:relative;
   font-weight:bold;
   font-size:25px;
   right: 5%;
