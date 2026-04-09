@@ -57,9 +57,12 @@
 .but-machine{
   height:100%;
   width:100%;
-  border-radius:5px;
+  border-radius:10px;
   border:none;
-  background:none;
+  background:
+  linear-gradient(217deg, #68F7DD, transparent 70.71%),
+  linear-gradient(127deg, #BDF2FF, transparent 70.71%),
+  linear-gradient(336deg, #38E3FF, transparent 70.71%);
 }
 
 /* ----- Pates ----- */
@@ -71,15 +74,10 @@
   position:absolute;
 }
 .patesDiv{
-  background:
-  linear-gradient(217deg, #68F7DD, transparent 70.71%),
-  linear-gradient(127deg, #BDF2FF, transparent 70.71%),
-  linear-gradient(336deg, #38E3FF, transparent 70.71%);
   height:10%;
   width:100%;
   display:flex;
   flex-direction:column;
   gap:10px;
-  border-radius:5px;
 }
 
