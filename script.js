@@ -3,6 +3,7 @@ let nmbCook = 0;
 let cookForClick = 1;
 let nmbCookSec = 0;
 let machine = [["pates",1,50]];
+let time = 1000;
 
 image.addEventListener('click', function() {
     this.classList.add('img-reduite');
@@ -13,7 +14,8 @@ image.addEventListener('click', function() {
 });
 
 setInterval(() => {
-    nmbCook += nmbCookSec;
+    time = 1000 / nmbCookSec;
+    nmbCook += 1;
 }, 1000);
 setInterval(() => {
     let displayCook = nmbCook;
