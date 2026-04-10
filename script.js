@@ -58,7 +58,7 @@ window.machineBuy = function(machineChoose){
         if(machine[i][0] == machineChoose[0]){
             machine[i][2] = Math.ceil(machine[i][2] * 1.15);
             machine[i][1] = machine[i][1] + 1;
-            UPDATE(['${machine[i][1] - 1} Posseder', '${machine[i][2]} Cook']);
+            UPDATE([`${machine[i][1] - 1} Posseder`, `${machine[i][2]} Cook`]);
             break;
         }
     }
