@@ -3,7 +3,7 @@ let nmbCook = 0;
 let cookForClick = 1;
 let nmbCookSec = 0;
 let displayCook = 0;
-let machine = [["pates", 1, 50]]; // [Nom, Production de BASE, Prix]
+let machine = [["pates", 1, 50, 0]]; // [Nom, Production de BASE, Prix]
 
 image.addEventListener('click', function() {
     this.classList.add('img-reduite');
@@ -72,6 +72,7 @@ window.machineBuy = function(machineChoose) {
     nmbCook -= prixActuel;
     nmbCookSec += prodDeLaMachine;
     machine[index][2] = Math.ceil(prixActuel * 1.15);
+    machine[index][3] += 1;
     UPDATE([[machine[index][1] + " Posseder", machine[index][2] + " Cook"]]); 
 };
 
