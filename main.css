@@ -1,5 +1,12 @@
 /* =============== MAIN =============== */
 
+.main{
+    position:absolute;
+    left:0px;
+    top:0px;
+    height:100%;
+    width:25%;
+}
 @font-face {
     font-family: 'PolicePixel';
     src: url('ari-w9500-bold.ttf'); 
@@ -50,7 +57,7 @@ body{
 }
 .compteurSec{
   position:absolute;
-  left:108px;
+  left:50%;
   top:31%;
   transform: translate(-50%, -50%);
 }
