@@ -73,7 +73,7 @@
 .patesP{
   position:absolute;
   left: 15%;
-  top:22%;
+  top:20%;
   z-index:200;
   transform:translateY(-50%);
   pointer-events: none;
@@ -85,7 +85,7 @@
 .patesPrix{
   position:absolute;
   left:40%;
-  top:22%;
+  top:20%;
   z-index:200;
   transform:translateY(-50%);
   font-weight:bold;
@@ -96,7 +96,7 @@
 .patesCompt{
   position:absolute;
   right:5px;
-  bottom:22%;
+  bottom:20%;
   transform:translateY(50%);
   z-index:200;
   font-weight:bold;
