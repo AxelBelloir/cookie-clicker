@@ -98,7 +98,7 @@ body{
 .patesP{
   font-size:30px;
   position:absolute;
-  left: 20%;
+  left: 25%;
   top:8%;
   z-index:200;
   transform:translateY(-50%);
