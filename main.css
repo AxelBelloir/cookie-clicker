@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'PolicePixel';
-    src: url('PixeloidSans.ttf'); 
+    src: url('ari-w9500-bold.ttf'); 
 }
 
 body{
@@ -97,7 +97,6 @@ body{
   transform:translateY(-50%);
   pointer-events: none;
   font-weight:bold;
-  font-family:Garamond;
   pointer-events: none;
 }
 .patesPrix{
@@ -108,7 +107,6 @@ body{
   transform:translateY(-50%);
   font-weight:bold;
   font-size:15px;
-  font-family:Garamond;
   pointer-events: none;
 }
 .patesCompt{
@@ -119,7 +117,6 @@ body{
   z-index:200;
   font-weight:bold;
   font-size:15px;
-  font-family:Garamond;
   pointer-events: none;
 }
 .patesDiv{
