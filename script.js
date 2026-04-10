@@ -69,18 +69,9 @@ window.machineBuy = function(machineChoose) {
         console.log("Pas assez d'argent !");
         return;
     }
-
-    // 1. On paie
     nmbCook -= prixActuel;
-
-    // 2. On ajoute la production de la machine au total par seconde
     nmbCookSec += prodDeLaMachine;
-
-    // 3. On augmente SEULEMENT le prix pour la prochaine fois
     machine[index][2] = Math.ceil(prixActuel * 1.15);
-
-    // 4. Mise à jour des textes (Prix, etc.)
-    // Note : On envoie des valeurs simples pour ton UPDATE
     UPDATE([[ "Acheter", machine[index][2] + " Cook"]]); 
 };
 
@@ -91,5 +82,26 @@ function UPDATE(updater) {
             let el = document.getElementById(machineId[i][a]);
             if (el) el.innerText = updater[i][a];
         }
+    }
+}
+
+/* ==================== API ==================== */
+
+
+
+const API_URL = "https://cookie-clicker-l255.onrender.com/api";
+
+async function callAPI(body = {},endpoint){
+  try {
+        const response = await fetch(`${API_URL}/${endpoint}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body)
+        });
+        return await response.json();
+    } catch (e) {
+        console.error(`Erreur sur ${endpoint}:`, e);
+        notifier("Erreur de connexion au serveur");
+        return { message: "Erreur", logs: [] };
     }
 }
