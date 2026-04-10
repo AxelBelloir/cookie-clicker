@@ -66,6 +66,12 @@
   linear-gradient(217deg, #68F7DD, transparent 70.71%),
   linear-gradient(127deg, #BDF2FF, transparent 70.71%),
   linear-gradient(336deg, #38E3FF, transparent 70.71%);
+  transition: all 0.3s ease;
+}
+
+.but-machine:hover {
+  transform: scale(1.1);      /* Grossit légèrement */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Ajoute une ombre */
 }
 
 /* ----- Pates ----- */
