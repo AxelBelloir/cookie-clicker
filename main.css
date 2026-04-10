@@ -18,9 +18,9 @@ body{
   
   /* Position */
   position:absolute;
-  left:16px;
+  left:50%;
   top:50%;
-  transform: translateY(-50%);
+  transform: translate(-50%,-50%);
 
   /* Taille */
   width:350px;
@@ -44,7 +44,7 @@ body{
 }
 .compteur{
   position:absolute;
-  left:108px;
+  left:50%;
   top:28%;
   transform: translate(-50%, -50%);
 }
