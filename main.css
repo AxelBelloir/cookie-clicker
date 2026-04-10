@@ -71,10 +71,10 @@
 /* ----- Pates ----- */
 
 .patesP{
-  font-size:25px;
+  font-size:30px;
   position:absolute;
-  left: 10%;
-  top:50%;
+  left: 25%;
+  top:9%;
   z-index:200;
   transform:translateY(-50%);
   pointer-events: none;
