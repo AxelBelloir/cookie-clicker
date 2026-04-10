@@ -39,7 +39,7 @@ body{
 }
 
 .img-reduite {
-  transform: translateY(-50%) scale(0.8) !important;
+  transform: translate(-50%, -50%) scale(0.8) !important;
 }
 
 /* ----- Compteur Cook ----- */
@@ -68,7 +68,7 @@ body{
 /* ----- DIV ----- */
 
 .machine{
-  width:25%;
+  width:35%;
   height:100%;
   position:absolute;
   right:0px;
@@ -127,7 +127,7 @@ body{
   pointer-events: none;
 }
 .patesDiv{
-  height:15%;
+  height:10%;
   width:100%;
   position:absolute;
   top:5px;
