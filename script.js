@@ -21,7 +21,7 @@ function updateDisplay() {
     let diff = nmbCook - displayCook;
     
     // On gère la montée ET la descente
-    if (Math.abs(diff) > 0.1) {
+    if (Math.abs(diff) > 0.5) {
         displayCook += diff * 0.1;
     } else {
         displayCook = nmbCook;
