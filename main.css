@@ -71,14 +71,14 @@
 /* ----- Pates ----- */
 
 .patesP{
+  font-size:25px;
   position:absolute;
   left: 10%;
-  top:10%;
+  top:50%;
   z-index:200;
   transform:translateY(-50%);
   pointer-events: none;
   font-weight:bold;
-  font-size:30px;
   font-family:Garamond;
   pointer-events: none;
 }
