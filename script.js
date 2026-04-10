@@ -72,7 +72,7 @@ window.machineBuy = function(machineChoose) {
     nmbCook -= prixActuel;
     nmbCookSec += prodDeLaMachine;
     machine[index][2] = Math.ceil(prixActuel * 1.15);
-    UPDATE([[ String(machine[index][1] - 1) + " Posseder", machine[index][2] + " Cook"]]); 
+    UPDATE([[machine[index][1] + " Posseder", machine[index][2] + " Cook"]]); 
 };
 
 function UPDATE(updater) {
