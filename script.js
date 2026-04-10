@@ -3,6 +3,7 @@ let nmbCook = 0;
 let cookForClick = 1;
 let nmbCookSec = 0;
 let machine = [["pates",1,50]];
+let displayCook = 0;
 
 image.addEventListener('click', function() {
     this.classList.add('img-reduite');
@@ -15,25 +16,35 @@ image.addEventListener('click', function() {
 setInterval(() => {
     nmbCook += nmbCookSec;
 }, 1000);
+
 setInterval(() => {
-    let displayCook = nmbCook;
-    let unite = "";
-    let uniteNames = ["", " million", " billion", " trillion", " quadrillion"];
-    if (nmbCook > 999999) {
-        let i = 0;
-        let tempCook = nmbCook;
-        
-        while (tempCook >= 1000000 && i < uniteNames.length - 1) {
-            tempCook = Math.floor(tempCook / 1000000); // Division entière
-            i++;
-        }
-        displayCook = tempCook;
-        unite = uniteNames[i];
+    nmbCook += nmbCookSec / 10;
+}, 100);
+
+function updateDisplay() {
+    let diff = nmbCook - displayCook;
+
+    // Si l'écart est significatif, on fait bouger l'affichage
+    if (Math.abs(diff) > 0.1) {
+        // On se rapproche de la cible par petits pas (10% de la distance)
+        displayCook += diff * 0.1;
+    } else {
+        // Si on est très proche, on égalise pile-poil
+        displayCook = nmbCook;
     }
 
-    document.getElementById('compteur').innerText = displayCook + unite + " Cook";
-    document.getElementById('compteurSec').innerText = nmbCookSec + " Cook/s";
-}, 100);
+    // --- TON CODE DE FORMATAGE ---
+    let scoreToFormat = Math.floor(displayCook);
+    // ... (le reste de ton code de formatage reste identique)
+    
+    document.getElementById('compteur').innerText = scoreToFormat + unite + " Cook";
+    document.getElementById('compteurSec').innerText = nmbCookSec.toFixed(1) + " Cook/s";
+
+    requestAnimationFrame(updateDisplay);
+}
+
+// On lance la boucle d'affichage
+updateDisplay();
 
 window.machineBuy = function(machineChoose){
     let TRUEFALSE = false;
