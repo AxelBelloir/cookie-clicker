@@ -74,10 +74,16 @@ window.machineBuy = function(machineChoose) {
     nmbCookSec += prodDeLaMachine;
     machine[index][2] = Math.ceil(prixActuel * 1.15);
     machine[index][3] += 1;
-    UPDATE([[machine[index][3] + " Posseder", machine[index][2] + " Cook"]]); 
+    UPDATE([[machine[index][3] + " Posseder", machine[index][2] + " Cook"]],[true,index]); 
 };
 
-function UPDATE(updater) {
+function UPDATE(updater,n) {
+    if (n[0]){
+        document.getElementById(machineId[n[1]][0]).innerText = updater[0][0];
+        document.getElementById(machineId[n[1]][1]).innerText = updater[0][1];
+        return;
+    }
+
     for (let i = 0; i < machineId.length; ++i) {
         for (let a = 0; a < machineId[i].length; ++a) {
             let el = document.getElementById(machineId[i][a]);
