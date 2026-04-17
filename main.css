@@ -95,7 +95,7 @@ body{
 
 /* ----- Pates ----- */
 
-.patesP{
+.patesP,.rizP,.sauceP,.saladeP,.friteP{
   font-size:30px;
   position:absolute;
   left: 25%;
@@ -106,7 +106,7 @@ body{
   font-weight:bold;
   pointer-events: none;
 }
-.patesPrix{
+.patesPrix,.rizPrix,.saucePrix,.saladePrix,.fritePrix{
   position:absolute;
   right:5%;
   top:5%;
@@ -116,7 +116,7 @@ body{
   font-size:15px;
   pointer-events: none;
 }
-.patesCompt{
+.patesCompt,.rizCompt,.sauceCompt,.saladeCompt,.friteCompt{
   position:absolute;
   right:5%;
   bottom:5%;
@@ -126,50 +126,11 @@ body{
   font-size:15px;
   pointer-events: none;
 }
-.patesDiv{
+.patesDiv,.rizDiv,.sauceDiv,.saladeDiv,.friteDiv{
   height:10%;
   width:100%;
   background:none;
   position:relative;
 }
 
-/* ----- Riz ----- */
-
-.rizP{
-  font-size:30px;
-  position:absolute;
-  left: 25%;
-  top:8%;
-  z-index:200;
-  transform:translateY(-50%);
-  pointer-events: none;
-  font-weight:bold;
-  pointer-events: none;
-}
-.rizPrix{
-  position:absolute;
-  right:5%;
-  top:5%;
-  z-index:200;
-  transform:translateY(-50%);
-  font-weight:bold;
-  font-size:15px;
-  pointer-events: none;
-}
-.rizCompt{
-  position:absolute;
-  right:5%;
-  bottom:5%;
-  transform:translateY(50%);
-  z-index:200;
-  font-weight:bold;
-  font-size:15px;
-  pointer-events: none;
-}
-.rizDiv{
-  height:10%;
-  width:100%;
-  background:none;
-  position:relative;
-}
 
