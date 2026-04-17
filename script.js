@@ -3,7 +3,7 @@ let nmbCook = 0;
 let cookForClick = 1;
 let nmbCookSec = 0;
 let displayCook = 0;
-let machine = [["pates", 1, 50, 0]]; // [Nom, Production de BASE, Prix]
+let machine = [["pates", 1, 50, 0],["riz", 10, 500, 0]]; // [Nom, Production de BASE, Prix, Nombre posseder]
 
 image.addEventListener('click', function() {
     this.classList.add('img-reduite');
