@@ -133,3 +133,43 @@ body{
   position:relative;
 }
 
+/* ----- Riz ----- */
+
+.rizP{
+  font-size:30px;
+  position:absolute;
+  left: 25%;
+  top:8%;
+  z-index:200;
+  transform:translateY(-50%);
+  pointer-events: none;
+  font-weight:bold;
+  pointer-events: none;
+}
+.rizPrix{
+  position:absolute;
+  right:5%;
+  top:5%;
+  z-index:200;
+  transform:translateY(-50%);
+  font-weight:bold;
+  font-size:15px;
+  pointer-events: none;
+}
+.rizCompt{
+  position:absolute;
+  right:5%;
+  bottom:5%;
+  transform:translateY(50%);
+  z-index:200;
+  font-weight:bold;
+  font-size:15px;
+  pointer-events: none;
+}
+.rizDiv{
+  height:10%;
+  width:100%;
+  background:none;
+  position:relative;
+}
+
