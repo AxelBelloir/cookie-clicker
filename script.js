@@ -4,6 +4,7 @@ let cookForClick = 1;
 let nmbCookSec = 0;
 let displayCook = 0;
 let machine = [["pates", 1, 50, 0],["riz", 10, 500, 0]]; // [Nom, Production de BASE, Prix, Nombre posseder]
+const machineId = [["patesCompt", "patesPrix"],["rizCompt", "rizPrix"]];
 
 image.addEventListener('click', function() {
     this.classList.add('img-reduite');
@@ -77,7 +78,6 @@ window.machineBuy = function(machineChoose) {
 };
 
 function UPDATE(updater) {
-    const machineId = [["patesCompt", "patesPrix"]];
     for (let i = 0; i < machineId.length; ++i) {
         for (let a = 0; a < machineId[i].length; ++a) {
             let el = document.getElementById(machineId[i][a]);
