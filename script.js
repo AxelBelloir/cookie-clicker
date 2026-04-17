@@ -3,8 +3,8 @@ let nmbCook = 0;
 let cookForClick = 1;
 let nmbCookSec = 0;
 let displayCook = 0;
-let machine = [["pates", 1, 50, 0],["riz", 10, 500, 0]]; // [Nom, Production de BASE, Prix, Nombre posseder]
-const machineId = [["patesCompt", "patesPrix"],["rizCompt", "rizPrix"]];
+let machine = [["pates", 1, 50, 0],["riz", 10, 500, 0],["sauce", 25, 1000, 0],["salade", 100, 5000, 0],["frite", 500, 10000, 0]]; // [Nom, Production de BASE, Prix, Nombre posseder]
+const machineId = [["patesCompt", "patesPrix"],["rizCompt", "rizPrix"],["sauceCompt", "saucePrix"],["saladeCompt", "saladePrix"],["friteCompt", "fritePrix"]];
 
 image.addEventListener('click', function() {
     this.classList.add('img-reduite');
