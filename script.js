@@ -58,9 +58,9 @@ function updateDisplay() {
 
     document.getElementById('compteur').innerText = out[0] + out[1] + " Cook";
     if(nmbCookSec >= 1000){
-        out = unite(displayCook);
+        out = unite(nmbCookSec);
     } else {
-        out = [displayCook,""];
+        out = [nmbCookSec,""];
     }
     document.getElementById('compteurSec').innerText = out[0] + out[1] + " Cook/s";
 
