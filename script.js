@@ -25,7 +25,7 @@ setInterval(() => {
 function clickChapeau(event) {
     // 1. Création de l'élément à partir de ton image existante
     const toque = document.createElement("img");
-    toque.src = "IMG_5106.PNG"; // On réutilise ton image
+    toque.src = "Gemini_Generated_Image_k9cj3nk9cj3nk9cj-removebg-preview.png"; // On réutilise ton image
     toque.classList.add("toque-particule");
 
     // 2. Positionnement au niveau du clic
