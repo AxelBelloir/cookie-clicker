@@ -57,9 +57,20 @@ body{
 
 /* Animation Verticale (Saut et Gravité) */
 @keyframes fly-y {
-    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-    40% { transform: translateY(-120px) rotate(var(--rotation)); } /* Sommet du saut */
-    100% { transform: translateY(100px) rotate(var(--rotation-fin)); opacity: 0; } /* Retombe */
+    00% { 
+        transform: translateY(0) rotate(0deg); 
+        opacity: 1; 
+    }
+    20% { 
+        /* Petit saut vers le haut au début */
+        transform: translateY(-80px) rotate(var(--rotation)); 
+        opacity: 1;
+    }
+    100% { 
+        /* Chute tout en bas (120vh = hors écran) */
+        transform: translateY(120vh) rotate(var(--rotation-fin)); 
+        opacity: 1; /* On garde l'opacité pour la voir tomber jusqu'au bout */
+    }
 }
 
 /* Animation Horizontale (Éjection latérale) */
