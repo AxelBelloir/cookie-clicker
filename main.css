@@ -51,8 +51,8 @@ body{
     
     /* On applique les deux animations en même temps */
     animation: 
-        fly-y 3.5s ease-out forwards, 
-        fly-x 3.5s linear forwards;
+        fly-y 2.5s ease-out forwards, 
+        fly-x 2.5s linear forwards;
 }
 
 /* Animation Verticale (Saut et Gravité) */
