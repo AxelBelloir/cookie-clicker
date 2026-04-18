@@ -90,10 +90,10 @@ window.machineBuy = function(machineChoose) {
 
 function UPDATE(updater,n) {
     if (n[0]){
-        if(updater[1] >= 1000){
+        if(updater[0][1] >= 1000){
             out = unite(updater[1]);
         } else {
-            out = [updater[1],""];
+            out = [updater[0][1],""];
         }
         document.getElementById(machineId[n[1]][0]).innerText = updater[0][0];
         document.getElementById(machineId[n[1]][1]).innerText = out[0] + out[1];
