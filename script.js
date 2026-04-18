@@ -57,7 +57,12 @@ function updateDisplay() {
     }
 
     document.getElementById('compteur').innerText = out[0] + out[1] + " Cook";
-    document.getElementById('compteurSec').innerText = nmbCookSec + " Cook/s";
+    if(nmbCookSec >= 1000){
+        out = unite(displayCook);
+    } else {
+        out = [displayCook,""];
+    }
+    document.getElementById('compteurSec').innerText = out[0] + out[1] + " Cook/s";
 
     requestAnimationFrame(updateDisplay);
 }
@@ -86,18 +91,23 @@ window.machineBuy = function(machineChoose) {
     nmbCookSec += prodDeLaMachine;
     machine[index][2] = Math.ceil(prixActuel * 1.15);
     machine[index][3] += 1;
-    UPDATE([[machine[index][3] + " Posseder", machine[index][2]]],[true,index]); 
+    UPDATE([[machine[index][3], machine[index][2]]],[true,index]); 
 };
 
 function UPDATE(updater,n) {
     if (n[0]){
         let out;
+        if(updater[0][0] >= 1000){
+            out = unite(updater[0][0]);
+        } else {
+            out = [updater[0][0],""];
+        }
+        document.getElementById(machineId[n[1]][0]).innerText = out[0] + out[1] + " Posseder";
         if(updater[0][1] >= 1000){
             out = unite(updater[0][1]);
         } else {
             out = [updater[0][1],""];
         }
-        document.getElementById(machineId[n[1]][0]).innerText = updater[0][0];
         document.getElementById(machineId[n[1]][1]).innerText = out[0] + out[1] + " Cook";
         return;
     }
