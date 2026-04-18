@@ -42,7 +42,7 @@ function unite(incook){
 function updateDisplay() {
     // Calcul de la différence pour l'animation fluide
     let diff = nmbCook - displayCook;
-    
+    let out;
     // On gère la montée ET la descente
     if (Math.abs(diff) > 0.5) {
         displayCook += diff * 0.1;
@@ -50,9 +50,9 @@ function updateDisplay() {
         displayCook = nmbCook;
     }
     if(displayCook >= 1000){
-        let out = unite(displayCook);
+        out = unite(displayCook);
     } else {
-        let out = [displayCook,""];
+        out = [displayCook,""];
     }
 
     document.getElementById('compteur').innerText = out[0] + out[1] + " Cook";
@@ -90,10 +90,11 @@ window.machineBuy = function(machineChoose) {
 
 function UPDATE(updater,n) {
     if (n[0]){
+        let out;
         if(updater[0][1] >= 1000){
-            let out = unite(updater[0][1]);
+            out = unite(updater[0][1]);
         } else {
-            let out = [updater[0][1],""];
+            out = [updater[0][1],""];
         }
         document.getElementById(machineId[n[1]][0]).innerText = updater[0][0];
         document.getElementById(machineId[n[1]][1]).innerText = out[0] + out[1];
