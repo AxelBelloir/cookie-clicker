@@ -83,7 +83,7 @@ window.machineBuy = function(machineChoose) {
 
 function UPDATE(updater,n) {
     if (n[0]){
-        let cook = Math.floor(updater[0][0]);
+        let cook = Math.floor(updater[0][1]);
         let unite = "";
         let uniteNames = ["", " million", " billion", " trillion", " quadrillion"];
     
@@ -97,8 +97,8 @@ function UPDATE(updater,n) {
             cook = tempCook;
             unite = uniteNames[i];
         }
-        document.getElementById(machineId[n[1]][0]).innerText = cook + " " + unite;
-        document.getElementById(machineId[n[1]][1]).innerText = updater[0][1];
+        document.getElementById(machineId[n[1]][0]).innerText = updater[0][0];
+        document.getElementById(machineId[n[1]][1]).innerText = cook + " " + unite;
         return;
     }
 
