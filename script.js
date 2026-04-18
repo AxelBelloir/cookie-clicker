@@ -22,6 +22,37 @@ setInterval(() => {
     }
 }, 1000);
 
+function clickChapeau(event) {
+    // 1. Création de l'élément à partir de ton image existante
+    const toque = document.createElement("img");
+    toque.src = "IMG_5106.PNG"; // On réutilise ton image
+    toque.classList.add("toque-particule");
+
+    // 2. Positionnement au niveau du clic
+    // On centre la toque sur la souris (20px est la moitié de sa largeur)
+    const x = event.pageX - 20;
+    const y = event.pageY - 20;
+    toque.style.left = x + "px";
+    toque.style.top = y + "px";
+
+    // 3. Calcul du hasard (Math.random)
+    const dirX = (Math.random() - 0.5) * 200; // Entre -100px et +100px
+    const rotMid = (Math.random() - 0.5) * 60; // Rotation au sommet
+    const rotFin = (Math.random() - 0.5) * 360; // Rotation finale
+
+    // 4. On envoie ces valeurs au CSS via les variables personnalisées
+    toque.style.setProperty('--direction-x', dirX + "px");
+    toque.style.setProperty('--rotation', rotMid + "deg");
+    toque.style.setProperty('--rotation-fin', rotFin + "deg");
+
+    // 5. Ajout au document et suppression automatique
+    document.body.appendChild(toque);
+    
+    setTimeout(() => {
+        toque.remove();
+    }, 800); // On supprime après la fin de l'animation
+}
+
 function unite(incook){
     let cook = incook;
     let unite = "";
