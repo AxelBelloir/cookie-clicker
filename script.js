@@ -50,9 +50,9 @@ function updateDisplay() {
         displayCook = nmbCook;
     }
     if(displayCook >= 1000){
-        out = unite(displayCook);
+        let out = unite(displayCook);
     } else {
-        out = [displayCook,""];
+        let out = [displayCook,""];
     }
 
     document.getElementById('compteur').innerText = out[0] + out[1] + " Cook";
@@ -91,9 +91,9 @@ window.machineBuy = function(machineChoose) {
 function UPDATE(updater,n) {
     if (n[0]){
         if(updater[0][1] >= 1000){
-            out = unite(updater[1]);
+            let out = unite(updater[0][1]);
         } else {
-            out = [updater[0][1],""];
+            let out = [updater[0][1],""];
         }
         document.getElementById(machineId[n[1]][0]).innerText = updater[0][0];
         document.getElementById(machineId[n[1]][1]).innerText = out[0] + out[1];
