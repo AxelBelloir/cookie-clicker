@@ -97,7 +97,7 @@ function UPDATE(updater,n) {
             out = [updater[0][1],""];
         }
         document.getElementById(machineId[n[1]][0]).innerText = updater[0][0];
-        document.getElementById(machineId[n[1]][1]).innerText = out[0] + out[1];
+        document.getElementById(machineId[n[1]][1]).innerText = out[0] + out[1] + " Cook";
         return;
     }
 
