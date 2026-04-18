@@ -37,7 +37,7 @@ function unite(incook){
         }
         cook = tempCook;
         unite = uniteNames[i];
-        return [cook.toFixed(1),unite];
+        return [cook.toFixed(3),unite];
     }
 }
 function updateDisplay() {
