@@ -118,14 +118,6 @@ body{
   background: white;
   opacity: 0.4;
 }
-.but-machine:active {
-  /* Effet de bouton enfoncé */
-  box-shadow: 
-    inset 0 4px 0 rgba(0,0,0,0.3),
-    2px 2px 0px #000;
-  transform: translate(2px, 2px);
-}
-
 /* ----- Pates ----- */
 
 .patesP,.rizP,.sauceP,.saladeP,.friteP{
