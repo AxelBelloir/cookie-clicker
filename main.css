@@ -83,10 +83,26 @@ body{
   width:100%;
   border-radius:10px;
   border:none;
-  background:
-  linear-gradient(217deg, #68F7DD, transparent 70.71%),
-  linear-gradient(127deg, #BDF2FF, transparent 70.71%),
-  linear-gradient(336deg, #38E3FF, transparent 70.71%);
+  background: 
+    /* Premier dégradé (Turquoise) avec paliers nets */
+    linear-gradient(217deg, 
+      #68F7DD 0%, #68F7DD 25%, 
+      rgba(104, 247, 221, 0.5) 25%, rgba(104, 247, 221, 0.5) 50%, 
+      transparent 50%),
+    
+    /* Deuxième dégradé (Bleu Clair) avec paliers nets */
+    linear-gradient(127deg, 
+      #BDF2FF 0%, #BDF2FF 25%, 
+      rgba(189, 242, 255, 0.5) 25%, rgba(189, 242, 255, 0.5) 50%, 
+      transparent 50%),
+    
+    /* Troisième dégradé (Cyan vif) avec paliers nets */
+    linear-gradient(336deg, 
+      #38E3FF 0%, #38E3FF 25%, 
+      rgba(56, 227, 255, 0.5) 25%, rgba(56, 227, 255, 0.5) 50%, 
+      transparent 50%);
+
+  background-color: #222;
   background-size: 15px 15px;
   transition: all 0.3s ease;
 }
