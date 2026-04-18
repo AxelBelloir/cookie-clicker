@@ -23,7 +23,7 @@ setInterval(() => {
 }, 1000);
 
 function unite(incook){
-    let cook = Math.floor(incook);
+    let cook = incook;
     let unite = "";
     let uniteNames = ["", " k", " million", " billion", " trillion", " quadrillion"];
     
@@ -31,12 +31,13 @@ function unite(incook){
         let i = 0;
         let tempCook = cook;
         while (tempCook >= 1000 && i < uniteNames.length - 1) {
-            tempCook = Math.floor(tempCook / 1000);
+            tempCook = tempCook / 1000;
+
             i++;
         }
         cook = tempCook;
         unite = uniteNames[i];
-        return [cook,unite];
+        return [cook.toFixed(1),unite];
     }
 }
 function updateDisplay() {
