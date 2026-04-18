@@ -44,7 +44,7 @@ body{
 
 .toque-particule {
     position: absolute;
-    width: 100pw; /* Taille de la petite toque volante */
+    width: 100px; /* Taille de la petite toque volante */
     pointer-events: none; /* Pour ne pas bloquer les clics suivants */
     z-index: 1000;
     image-rendering: pixelated;
