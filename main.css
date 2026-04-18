@@ -68,7 +68,7 @@ body{
     }
     100% { 
         /* Chute tout en bas (150vh = hors écran) */
-        transform: translateY(100vh) rotate(var(--rotation-fin)); 
+        transform: translateY(120vh) rotate(var(--rotation-fin)); 
         opacity: 1; /* On garde l'opacité pour la voir tomber jusqu'au bout */
     }
 }
