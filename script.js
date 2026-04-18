@@ -15,6 +15,11 @@ image.addEventListener('click', function() {
 // Production automatique (toutes les secondes pour rester simple)
 setInterval(() => {
     nmbCook += nmbCookSec;
+    for(let i = 0;i < machine.length;++i){
+        if(machine[i][2] <= nmbCook/2){
+            document.getElementById(machine[i][0] + "Div").style.display = "block";
+        }
+    }
 }, 1000);
 
 function updateDisplay() {
