@@ -128,7 +128,7 @@ body{
   pointer-events: none;
 }
 .patesDiv,.rizDiv,.sauceDiv,.saladeDiv,.friteDiv{
-  height:10%;
+  height:30%;
   width:100%;
   background:none;
   position:relative;
