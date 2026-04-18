@@ -35,13 +35,13 @@ function updateDisplay() {
 
     let scoreToDisplay = Math.floor(displayCook);
     let unite = "";
-    let uniteNames = ["", " million", " billion", " trillion", " quadrillion"];
+    let uniteNames = ["", " k", " million", " billion", " trillion", " quadrillion"];
     
-    if (scoreToDisplay >= 1000000) {
+    if (scoreToDisplay >= 1000) {
         let i = 0;
         let tempCook = scoreToDisplay;
-        while (tempCook >= 1000000 && i < uniteNames.length - 1) {
-            tempCook = Math.floor(tempCook / 1000000);
+        while (tempCook >= 1000 && i < uniteNames.length - 1) {
+            tempCook = Math.floor(tempCook / 1000);
             i++;
         }
         scoreToDisplay = tempCook;
@@ -85,20 +85,20 @@ function UPDATE(updater,n) {
     if (n[0]){
         let cook = Math.floor(updater[0][1]);
         let unite = "";
-        let uniteNames = ["", " million", " billion", " trillion", " quadrillion"];
+        let uniteNames = ["", " k", " million", " billion", " trillion", " quadrillion"];
     
-        if (cook >= 1000000) {
+        if (cook >= 1000) {
             let i = 0;
             let tempCook = cook;
-            while (tempCook >= 1000000 && i < uniteNames.length - 1) {
-                tempCook = Math.floor(tempCook / 1000000);
+            while (tempCook >= 1000 && i < uniteNames.length - 1) {
+                tempCook = Math.floor(tempCook / 1000);
                 i++;
             }
             cook = tempCook;
             unite = uniteNames[i];
         }
         document.getElementById(machineId[n[1]][0]).innerText = updater[0][0];
-        document.getElementById(machineId[n[1]][1]).innerText = cook + " " + unite;
+        document.getElementById(machineId[n[1]][1]).innerText = cook + unite;
         return;
     }
 
