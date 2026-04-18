@@ -97,7 +97,7 @@ function UPDATE(updater,n) {
             cook = tempCook;
             unite = uniteNames[i];
         }
-        document.getElementById(machineId[n[1]][0]).innerText = updater[0][0];
+        document.getElementById(machineId[n[1]][0]).innerText = cook + " " + unite;
         document.getElementById(machineId[n[1]][1]).innerText = updater[0][1];
         return;
     }
