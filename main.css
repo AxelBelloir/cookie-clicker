@@ -84,26 +84,14 @@ body{
   border-radius:10px;
   border:none;
   background: 
-    /* Premier dégradé (Turquoise) avec paliers nets */
     linear-gradient(217deg, 
-      #68F7DD 0%, #68F7DD 25%, 
-      rgba(104, 247, 221, 0.5) 25%, rgba(104, 247, 221, 0.5) 50%, 
-      transparent 50%),
-    
-    /* Deuxième dégradé (Bleu Clair) avec paliers nets */
-    linear-gradient(127deg, 
-      #BDF2FF 0%, #BDF2FF 25%, 
-      rgba(189, 242, 255, 0.5) 25%, rgba(189, 242, 255, 0.5) 50%, 
-      transparent 50%),
-    
-    /* Troisième dégradé (Cyan vif) avec paliers nets */
-    linear-gradient(336deg, 
-      #38E3FF 0%, #38E3FF 25%, 
-      rgba(56, 227, 255, 0.5) 25%, rgba(56, 227, 255, 0.5) 50%, 
-      transparent 50%);
-
-  background-color: #222;
-  background-size: 15px 15px;
+      #68F7DD 0%, #68F7DD 33%, 
+      #48D7BD 33%, #48D7BD 66%, 
+      #28B79D 66%, #28B79D 100%
+    );
+  
+  /* Supprime le background-size de 15px, c'est lui qui rendait ça moche */
+  image-rendering: pixelated;
   transition: all 0.3s ease;
 }
 
