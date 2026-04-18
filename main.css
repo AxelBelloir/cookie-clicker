@@ -51,8 +51,8 @@ body{
     
     /* On applique les deux animations en même temps */
     animation: 
-        fly-y 2.5s ease-out forwards, 
-        fly-x 2.5s linear forwards;
+        fly-y 3.5s ease-out forwards, 
+        fly-x 3.5s linear forwards;
 }
 
 /* Animation Verticale (Saut et Gravité) */
@@ -67,8 +67,8 @@ body{
         opacity: 1;
     }
     100% { 
-        /* Chute tout en bas (120vh = hors écran) */
-        transform: translateY(120vh) rotate(var(--rotation-fin)); 
+        /* Chute tout en bas (150vh = hors écran) */
+        transform: translateY(150vh) rotate(var(--rotation-fin)); 
         opacity: 1; /* On garde l'opacité pour la voir tomber jusqu'au bout */
     }
 }
