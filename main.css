@@ -87,6 +87,7 @@ body{
   linear-gradient(217deg, #68F7DD, transparent 70.71%),
   linear-gradient(127deg, #BDF2FF, transparent 70.71%),
   linear-gradient(336deg, #38E3FF, transparent 70.71%);
+  background-size: 15px 15px;
   transition: all 0.3s ease;
 }
 
