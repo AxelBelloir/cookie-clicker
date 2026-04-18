@@ -82,41 +82,40 @@ body{
   height: 100%;
   width: 100%;
   border-radius: 0px; 
-  border: 4px solid #000;
+  /* On remplace la bordure noire par une bordure "pixel" en relief */
+  border: none;
   cursor: pointer;
   position: relative;
-  overflow: hidden;
-
-  /* 1. La couleur de fond (Cyan vif) */
-  background-color: #38E3FF; 
   
-  /* 2. On ajoute les deux autres couleurs par-dessus comme des gros blocs */
-  background-image: 
-    /* Le Turquoise en haut (gros bloc) */
-    linear-gradient(180deg, #68F7DD 0%, #68F7DD 50%, transparent 50.1%),
-    /* Le Bleu Clair sur le côté droit */
-    linear-gradient(90deg, transparent 50%, #BDF2FF 50.1%);
+  /* On crée 3 grandes zones de couleur horizontales (Zéro triangles) */
+  background: linear-gradient(180deg, 
+    #68F7DD 0%, #68F7DD 33.3%, 
+    #48D7BD 33.3%, #48D7BD 66.6%, 
+    #28B79D 66.6%, #28B79D 100%
+  );
 
-  /* 3. On demande au CSS de ne pas lisser pour garder les angles "carrés" */
-  background-size: 100% 100%;
-  image-rendering: pixelated;
-
-  /* 4. Relief "Gros Pixel" */
+  /* L'ombre "Gros Pixels" : on utilise des ombres internes épaisses */
   box-shadow: 
-    inset -6px -6px 0px rgba(0,0,0,0.15), /* Ombre droite/bas */
-    inset 6px 6px 0px rgba(255,255,255,0.3); /* Lumière gauche/haut */
+    inset 0 6px 0 rgba(255,255,255,0.4),  /* Gros reflet haut */
+    inset 0 -6px 0 rgba(0,0,0,0.2),       /* Grosse ombre bas */
+    4px 4px 0px #000;                     /* Contour extérieur pixelisé */
+
+  image-rendering: pixelated;
+  margin-bottom: 4px; /* Pour compenser l'ombre extérieure */
+  transition: all 0.1s steps(2);
 }
 
-/* 5. Le petit reflet "brillant" typique du pixel art */
-.but-machine::before {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  width: 12px;
-  height: 6px;
-  background: white;
-  opacity: 0.4;
+.but-machine:hover {
+  /* Au lieu de scale (qui floute), on change juste la luminosité */
+  filter: brightness(1.1);
+}
+
+.but-machine:active {
+  /* Effet de bouton enfoncé */
+  box-shadow: 
+    inset 0 4px 0 rgba(0,0,0,0.3),
+    2px 2px 0px #000;
+  transform: translate(2px, 2px);
 }
 /* ----- Pates ----- */
 
