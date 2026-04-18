@@ -3,7 +3,7 @@ let nmbCook = 0;
 let cookForClick = 1;
 let nmbCookSec = 0;
 let displayCook = 0;
-let machine = [["pates", 1, 50, 0],["riz", 10, 500, 0],["sauce", 25, 1000, 0],["salade", 100, 5000, 0],["frite", 500, 10000, 0]]; // [Nom, Production de BASE, Prix, Nombre posseder]
+let machine = [["pates", 1, 100, 0],["riz", 10, 1000, 0],["sauce", 25, 10000, 0],["salade", 100, 100000, 0],["frite", 500, 1000000, 0]]; // [Nom, Production de BASE, Prix, Nombre posseder]
 const machineId = [["patesCompt", "patesPrix"],["rizCompt", "rizPrix"],["sauceCompt", "saucePrix"],["saladeCompt", "saladePrix"],["friteCompt", "fritePrix"]];
 
 image.addEventListener('click', function() {
@@ -37,7 +37,6 @@ function updateDisplay() {
     let unite = "";
     let uniteNames = ["", " million", " billion", " trillion", " quadrillion"];
     
-    // Ton système de formatage original
     if (scoreToDisplay >= 1000000) {
         let i = 0;
         let tempCook = scoreToDisplay;
@@ -84,6 +83,20 @@ window.machineBuy = function(machineChoose) {
 
 function UPDATE(updater,n) {
     if (n[0]){
+        let cook = Math.floor(updater[0][0]);
+        let unite = "";
+        let uniteNames = ["", " million", " billion", " trillion", " quadrillion"];
+    
+        if (cook >= 1000000) {
+            let i = 0;
+            let tempCook = cook;
+            while (tempCook >= 1000000 && i < uniteNames.length - 1) {
+                tempCook = Math.floor(tempCook / 1000000);
+                i++;
+            }
+            cook = tempCook;
+            unite = uniteNames[i];
+        }
         document.getElementById(machineId[n[1]][0]).innerText = updater[0][0];
         document.getElementById(machineId[n[1]][1]).innerText = updater[0][1];
         return;
