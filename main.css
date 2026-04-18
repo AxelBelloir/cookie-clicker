@@ -48,6 +48,7 @@ body{
   color:black;
   font-weight:bold;
   text-align: center;
+  white-space: nowrap;
 }
 .compteur{
   position:absolute;
