@@ -22,8 +22,8 @@ setInterval(() => {
     }
 }, 1000);
 
-function unite(cook){
-    let cook = Math.floor(cook);
+function unite(incook){
+    let cook = Math.floor(incook);
     let unite = "";
     let uniteNames = ["", " k", " million", " billion", " trillion", " quadrillion"];
     
@@ -49,8 +49,11 @@ function updateDisplay() {
     } else {
         displayCook = nmbCook;
     }
-
-    out = unite(displayCook);
+    if(displayCook >= 1000){
+        out = unite(displayCook);
+    } else {
+        out = [displayCook,""];
+    }
 
     document.getElementById('compteur').innerText = out[0] + out[1] + " Cook";
     document.getElementById('compteurSec').innerText = nmbCookSec + " Cook/s";
@@ -87,7 +90,11 @@ window.machineBuy = function(machineChoose) {
 
 function UPDATE(updater,n) {
     if (n[0]){
-        out = unite(updater[1]);
+        if(updater[1] >= 1000){
+            out = unite(updater[1]);
+        } else {
+            out = [updater[1],""];
+        }
         document.getElementById(machineId[n[1]][0]).innerText = updater[0][0];
         document.getElementById(machineId[n[1]][1]).innerText = out[0] + out[1];
         return;
