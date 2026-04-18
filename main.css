@@ -70,7 +70,7 @@ body{
 .machine{
   width:35%;
   height:70%;
-  overflow-y: auto;
+  overflow-x: auto;
   position:absolute;
   right:0px;
   display:flex;
