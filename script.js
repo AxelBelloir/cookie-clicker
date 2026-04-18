@@ -22,6 +22,23 @@ setInterval(() => {
     }
 }, 1000);
 
+function unite(cook){
+    let cook = Math.floor(cook);
+    let unite = "";
+    let uniteNames = ["", " k", " million", " billion", " trillion", " quadrillion"];
+    
+    if (cook >= 1000) {
+        let i = 0;
+        let tempCook = cook;
+        while (tempCook >= 1000 && i < uniteNames.length - 1) {
+            tempCook = Math.floor(tempCook / 1000);
+            i++;
+        }
+        cook = tempCook;
+        unite = uniteNames[i];
+        return [cook,unite];
+    }
+}
 function updateDisplay() {
     // Calcul de la différence pour l'animation fluide
     let diff = nmbCook - displayCook;
@@ -33,22 +50,9 @@ function updateDisplay() {
         displayCook = nmbCook;
     }
 
-    let scoreToDisplay = Math.floor(displayCook);
-    let unite = "";
-    let uniteNames = ["", " k", " million", " billion", " trillion", " quadrillion"];
-    
-    if (scoreToDisplay >= 1000) {
-        let i = 0;
-        let tempCook = scoreToDisplay;
-        while (tempCook >= 1000 && i < uniteNames.length - 1) {
-            tempCook = Math.floor(tempCook / 1000);
-            i++;
-        }
-        scoreToDisplay = tempCook;
-        unite = uniteNames[i];
-    }
+    out = unite(displayCook);
 
-    document.getElementById('compteur').innerText = scoreToDisplay + unite + " Cook";
+    document.getElementById('compteur').innerText = out[0] + out[1] + " Cook";
     document.getElementById('compteurSec').innerText = nmbCookSec + " Cook/s";
 
     requestAnimationFrame(updateDisplay);
@@ -78,27 +82,14 @@ window.machineBuy = function(machineChoose) {
     nmbCookSec += prodDeLaMachine;
     machine[index][2] = Math.ceil(prixActuel * 1.15);
     machine[index][3] += 1;
-    UPDATE([[machine[index][3] + " Posseder", machine[index][2] + " Cook"]],[true,index]); 
+    UPDATE([[machine[index][3] + " Posseder", machine[index][2]]],[true,index]); 
 };
 
 function UPDATE(updater,n) {
     if (n[0]){
-        let cook = Math.floor(updater[0][1]);
-        let unite = "";
-        let uniteNames = ["", " k", " million", " billion", " trillion", " quadrillion"];
-    
-        if (cook >= 1000) {
-            let i = 0;
-            let tempCook = cook;
-            while (tempCook >= 1000 && i < uniteNames.length - 1) {
-                tempCook = Math.floor(tempCook / 1000);
-                i++;
-            }
-            cook = tempCook;
-            unite = uniteNames[i];
-        }
+        out = unite(updater[1]);
         document.getElementById(machineId[n[1]][0]).innerText = updater[0][0];
-        document.getElementById(machineId[n[1]][1]).innerText = cook + unite;
+        document.getElementById(machineId[n[1]][1]).innerText = out[0] + out[1];
         return;
     }
 
