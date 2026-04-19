@@ -189,7 +189,7 @@ body{
 
 .but-machine:hover, .but-menu:hover{
   filter: brightness(1.1);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .but-machine:active, .but-menu:active{
@@ -197,7 +197,8 @@ body{
     inset 0 4px 0 rgba(0,0,0,0.3),
     2px 2px 0px #000;
   transform: translate(2px, 2px);
-  transform: scale(0.9);
+  transform: scale(0.92);
+  filter: brightness(0.9);
 }
 /* ----- Pates ----- */
 
