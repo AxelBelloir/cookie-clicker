@@ -83,11 +83,10 @@ function updateDisplay() {
     }
     if(displayCook >= 1000){
         out = unite(displayCook);
+        document.getElementById('compteur').innerText = out[0] + out[1] + " Cook";
     } else {
-        out = [displayCook,""];
+        document.getElementById('compteur').innerText = Math.floor(displayCook) + " Cook";
     }
-
-    document.getElementById('compteur').innerText = out[0] + out[1] + " Cook";
     if(nmbCookSec >= 1000){
         out = unite(nmbCookSec);
     } else {
