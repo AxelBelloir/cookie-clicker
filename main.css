@@ -100,8 +100,23 @@ body{
   transform: translate(-50%, -50%);
 }
 
+/* =============== MENU =============== */
 
+/* ----- DIV ----- */
+
+.menu{
+    width:35%;
+    height:30%;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;     
+}
 /* =============== MACHINE =============== */
+
 
 /* ----- DIV ----- */
 
@@ -119,7 +134,7 @@ body{
   justify-content: flex-start;
   align-items: stretch;     
 }
-.but-machine {
+.but-machine, .but-menu{
   height: 100%;
   width: 100%;
   border-radius: 0px; 
@@ -146,12 +161,12 @@ body{
   transition: all 0.1s steps(2);
 }
 
-.but-machine:hover {
+.but-machine:hover, .but-menu:hover{
   /* Au lieu de scale (qui floute), on change juste la luminosité */
   filter: brightness(1.1);
 }
 
-.but-machine:active {
+.but-machine:active, .but-menu:active{
   /* Effet de bouton enfoncé */
   box-shadow: 
     inset 0 4px 0 rgba(0,0,0,0.3),
