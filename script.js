@@ -150,6 +150,14 @@ function UPDATE(updater,n) {
     }
 }
 
+function menuOn(div){
+    document.getElementById(div).style.display = "block";
+}
+function menuOff(){
+    document.getElementById("settings").style.display = "none";
+    document.getElementById("succes").style.display = "none";
+    document.getElementById("skins").style.display = "none";
+}
 /* ==================== API ==================== */
 
 
