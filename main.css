@@ -1,19 +1,4 @@
 /* =============== MAIN =============== */
-.separation1{
-    height:100%;
-    width:auto;
-    position:absolute;
-    top:0px;
-    right:100px;
-}
-.separation2{
-    height:auto;
-    width:500px;
-    position:absolute;
-    bottom:20px;
-    right:0px;
-    transform: rotate(90deg);
-}
 .main{
     position:absolute;
     left:0px;
