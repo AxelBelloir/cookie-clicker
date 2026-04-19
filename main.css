@@ -122,6 +122,13 @@ body{
     position: relative;
     flex-shrink: 0; 
     flex-grow: 0;   
+    font-size:30px;
+    font-weight:bold;
+    font-family: 'PolicePixel',sans-serif;
+  
+    image-rendering: pixelated;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
 }
 /* =============== MACHINE =============== */
 
