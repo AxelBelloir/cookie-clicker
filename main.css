@@ -191,11 +191,16 @@ body{
   font-size:15px;
   pointer-events: none;
 }
-.patesDiv,.rizDiv,.sauceDiv,.saladeDiv,.friteDiv{
-  height:24%;
-  width:100%;
-  background:none;
-  position:relative;
+.patesDiv, .rizDiv, .sauceDiv, .saladeDiv, .friteDiv {
+  /* Remplace height: 24% par une taille fixe, par exemple 120px */
+  height: 120px; 
+  width: 100%;
+  background: none;
+  position: relative;
+  
+  /* AJOUTE CECI */
+  flex-shrink: 0; /* Empêche la div de rétrécir */
+  flex-grow: 0;   /* Empêche la div de grossir pour remplir l'espace */
 }
 
 
