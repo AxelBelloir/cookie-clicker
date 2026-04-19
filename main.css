@@ -4,13 +4,13 @@
     width:auto;
     position:absolute;
     top:0px;
-    right:200px;
+    right:100px;
 }
 .separation2{
     height:auto;
-    width:400px;
+    width:500px;
     position:absolute;
-    bottom:0px;
+    bottom:20px;
     right:0px;
     transform: rotate(90deg);
 }
