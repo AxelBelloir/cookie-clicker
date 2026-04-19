@@ -193,7 +193,7 @@ body{
 }
 .patesDiv, .rizDiv, .sauceDiv, .saladeDiv, .friteDiv {
   /* Remplace height: 24% par une taille fixe, par exemple 120px */
-  height: 120px; 
+  height: 99px; 
   width: 100%;
   background: none;
   position: relative;
