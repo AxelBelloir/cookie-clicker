@@ -161,6 +161,7 @@ body{
   gap: 15px;
   justify-content: flex-start;
   align-items: stretch;     
+  align-items: center;     
 }
 .but-machine, .but-menu{
   height: 100%;
