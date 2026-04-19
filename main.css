@@ -158,7 +158,7 @@ body{
   right: 5px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   justify-content: flex-start;
   align-items: stretch;     
 }
