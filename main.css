@@ -116,10 +116,10 @@ body{
     align-items: center;     
 }
 .p-menu{
-    font-size:15px;
+    font-size:20px;
     position:absolute;
     left:50%;
-    top:75%;
+    top:65%;
     z-index:200;
     transform:translate(-50%, -50%);
     pointer-events: none;
@@ -139,7 +139,7 @@ body{
     top:50%;
     z-index:200;
     transform:translate(-50%, -50%);
-    height:25%;
+    height:50%;
     width:auto;
     pointer-events:none;
 }
