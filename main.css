@@ -105,8 +105,8 @@ body{
 /* ----- DIV ----- */
 
 .buttunMenu{
-    width:35%;
-    height:28%;
+    width:400px;
+    height:150px;
     position:absolute;
     right:5px;
     bottom:5px;
@@ -140,7 +140,7 @@ body{
 
 .machine {
   width: 400px;
-  height: 500px; 
+  height: 450px; 
   overflow-y: auto; 
   overflow-x: hidden;
   position: absolute;
