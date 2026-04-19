@@ -1,5 +1,18 @@
 /* =============== MAIN =============== */
-
+.separation1{
+    height:100%;
+    width:auto;
+    position:absolute;
+    top:0px;
+    right:425px;
+}
+.separation2{
+    height:auto;
+    width:400px;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
 .main{
     position:absolute;
     left:0px;
