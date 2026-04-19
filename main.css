@@ -4,7 +4,7 @@
     width:auto;
     position:absolute;
     top:0px;
-    right:425px;
+    right:200px;
 }
 .separation2{
     height:auto;
@@ -12,6 +12,7 @@
     position:absolute;
     bottom:0px;
     right:0px;
+    transform: rotate(90deg);
 }
 .main{
     position:absolute;
