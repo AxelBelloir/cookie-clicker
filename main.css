@@ -235,7 +235,7 @@ body{
 }
 .patesDiv, .rizDiv, .sauceDiv, .saladeDiv, .friteDiv {
   height: 99px; 
-  width: 95%;
+  width: 90%;
   background: none;
   position: relative;
   flex-shrink: 0; 
