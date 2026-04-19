@@ -136,7 +136,7 @@ body{
 .img-menu{
     position:absolute;
     left:50%;
-    top:50%;
+    top:35%;
     z-index:200;
     transform:translate(-50%, -50%);
     height:75%;
