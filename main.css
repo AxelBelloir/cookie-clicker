@@ -139,7 +139,7 @@ body{
     top:50%;
     z-index:200;
     transform:translate(-50%, -50%);
-    height:50%;
+    height:75%;
     width:auto;
     pointer-events:none;
 }
