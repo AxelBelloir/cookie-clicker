@@ -117,7 +117,7 @@ body{
 }
 .but-menu {
     height:90%;
-    width:50px; 
+    width:1px; 
     background: none;
     position: relative;
     flex-shrink: 0; 
@@ -129,6 +129,7 @@ body{
     image-rendering: pixelated;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
+    color:black;
 }
 /* =============== MACHINE =============== */
 
