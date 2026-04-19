@@ -105,15 +105,19 @@ body{
 
 /* ----- DIV ----- */
 
-.machine{
-  width:35%;
-  height:70%;
-  overflow-x: auto;
-  position:absolute;
-  right:0px;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
+.machine {
+  width: 35%;
+  height: 70%; /* Garde ta hauteur */
+  overflow-y: auto; /* Scroll vertical */
+  overflow-x: hidden;
+  position: absolute;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  justify-content: flex-start;
+  align-items: stretch;     
 }
 .but-machine {
   height: 100%;
