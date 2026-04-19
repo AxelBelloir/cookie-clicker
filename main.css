@@ -143,6 +143,10 @@ body{
     width:auto;
     pointer-events:none;
 }
+.succesImg{
+    position:absolute;
+    left:60%;
+}
 /* =============== MACHINE =============== */
 
 
