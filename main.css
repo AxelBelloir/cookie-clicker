@@ -115,6 +115,14 @@ body{
     justify-content: flex-start;
     align-items: center;     
 }
+.but-menu {
+    height:90%;
+    width:50px; 
+    background: none;
+    position: relative;
+    flex-shrink: 0; 
+    flex-grow: 0;   
+}
 /* =============== MACHINE =============== */
 
 
@@ -122,15 +130,14 @@ body{
 
 .machine {
   width: 35%;
-  height: 70%; /* Garde ta hauteur */
-  overflow-y: auto; /* Scroll vertical */
+  height: 70%; 
+  overflow-y: auto; 
   overflow-x: hidden;
   position: absolute;
   right: 0px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-
   justify-content: flex-start;
   align-items: stretch;     
 }
@@ -138,36 +145,32 @@ body{
   height: 100%;
   width: 100%;
   border-radius: 0px; 
-  /* On remplace la bordure noire par une bordure "pixel" en relief */
+  
   border: none;
   cursor: pointer;
   position: relative;
   
-  /* On crée 3 grandes zones de couleur horizontales (Zéro triangles) */
+  
   background: linear-gradient(180deg, 
     #68F7DD 0%, #68F7DD 33.3%, 
     #48D7BD 33.3%, #48D7BD 66.6%, 
     #28B79D 66.6%, #28B79D 100%
   );
-
-  /* L'ombre "Gros Pixels" : on utilise des ombres internes épaisses */
   box-shadow: 
-    inset 0 6px 0 rgba(255,255,255,0.4),  /* Gros reflet haut */
-    inset 0 -6px 0 rgba(0,0,0,0.2),       /* Grosse ombre bas */
-    4px 4px 0px #000;                     /* Contour extérieur pixelisé */
+    inset 0 6px 0 rgba(255,255,255,0.4),  
+    inset 0 -6px 0 rgba(0,0,0,0.2),       
+    4px 4px 0px #000;                     
 
   image-rendering: pixelated;
-  margin-bottom: 4px; /* Pour compenser l'ombre extérieure */
+  margin-bottom: 4px; 
   transition: all 0.1s steps(2);
 }
 
 .but-machine:hover, .but-menu:hover{
-  /* Au lieu de scale (qui floute), on change juste la luminosité */
   filter: brightness(1.1);
 }
 
 .but-machine:active, .but-menu:active{
-  /* Effet de bouton enfoncé */
   box-shadow: 
     inset 0 4px 0 rgba(0,0,0,0.3),
     2px 2px 0px #000;
@@ -207,15 +210,12 @@ body{
   pointer-events: none;
 }
 .patesDiv, .rizDiv, .sauceDiv, .saladeDiv, .friteDiv {
-  /* Remplace height: 24% par une taille fixe, par exemple 120px */
   height: 99px; 
   width: 100%;
   background: none;
   position: relative;
-  
-  /* AJOUTE CECI */
-  flex-shrink: 0; /* Empêche la div de rétrécir */
-  flex-grow: 0;   /* Empêche la div de grossir pour remplir l'espace */
+  flex-shrink: 0; 
+  flex-grow: 0;   
 }
 
 
