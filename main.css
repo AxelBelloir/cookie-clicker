@@ -115,22 +115,31 @@ body{
     justify-content: flex-start;
     align-items: center;     
 }
-.but-menu {
-    flex-basis: 50px;
-    height: 80%;      
-    flex-grow: 0;  
-    flex-shrink: 0; 
-    
-    background: none;
-    position: relative;
-    font-size:30px;
+.p-menu{
+    font-size:15px;
+    position:absolute;
+    left:50%;
+    top:75%;
+    z-index:200;
+    transform:translate(-50%, -50%);
+    pointer-events: none;
     font-weight:bold;
-    font-family: 'PolicePixel',sans-serif;
-  
-    image-rendering: pixelated;
-    -webkit-font-smoothing: none;
-    -moz-osx-font-smoothing: grayscale;
-    color:black;
+}
+.div-menu{
+    height: auto; 
+    width: 30%;
+    background: none;
+    position:relative;
+    flex-shrink: 0; 
+    flex-grow: 0;   
+}
+.img-menu{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    height:25%;
+    width:auto;
 }
 /* =============== MACHINE =============== */
 
@@ -196,7 +205,6 @@ body{
   transform:translateY(-50%);
   pointer-events: none;
   font-weight:bold;
-  pointer-events: none;
 }
 .patesPrix,.rizPrix,.saucePrix,.saladePrix,.fritePrix{
   position:absolute;
