@@ -185,13 +185,19 @@ body{
     position:absolute;
     left:50%;
     top:15%;
-    transform:translateY(-50%);
-    color:black
+    transform:translateX(-50%);
+    color:black;
 }
 /* ----- SKIN ----- */
 
 .objet{
-    
+    position:absolute;
+    left:50%;
+    bottom:15px;
+    transform:translateX(-50%);
+    width:90%;
+    height:60%;
+    background-color:black;
 }
 
 .divSkin{
