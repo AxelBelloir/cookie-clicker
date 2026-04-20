@@ -1,3 +1,24 @@
+.overplayDiv{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+.overplayBut{
+    height:100%;
+    width:100%;
+    background:none;
+    border:none;
+}
+
+
+
+
+
+
 /* =============== MAIN =============== */
 .main{
     position:absolute;
