@@ -178,7 +178,33 @@ body{
     top:50%;
     transform:translate(-50%, -50%);
     z-index:10000;
-    background-color:black;
+    background-color:white;
+}
+.titre-menu{
+    font-size:40px;
+    position:absolute;
+    left:50%;
+    top:15%;
+    transform:translateY(-50%);
+    color:black
+}
+/* ----- SKIN ----- */
+
+.objet{
+    
+}
+
+.divSkin{
+    
+}
+.butSkin{
+    
+}
+.prixSkin{
+    
+}
+.imgSkin{
+    
 }
 /* =============== MACHINE =============== */
 
