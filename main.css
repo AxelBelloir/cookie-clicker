@@ -6,11 +6,13 @@
     transition: opacity 0.5s ease, visibility 0.5s; /* 0.5 seconde d'animation */
     
     /* Autres styles pour centrer ton menu */
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px);
 }
 
 /* État quand on ajoute la classe "active" avec JavaScript */
