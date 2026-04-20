@@ -152,6 +152,7 @@ body{
     top:50%;
     transform:translate(-50%, -50%)n
     z-index:10000;
+    background-color:black;
 }
 /* =============== MACHINE =============== */
 
