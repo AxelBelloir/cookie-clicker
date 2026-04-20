@@ -214,31 +214,41 @@ body{
     flex-grow: 0;  
 }
 .butSkin{
-    width:100%;
-    height:100%;
-    background:none;
-    border:none;
-    padding: 0;          
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    padding: 0;
     cursor: pointer;
-    display: inline-flex;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
 .prixSkin{
-    font-size:15px;
-    position:absolute;
-    top:110%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    color:black;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 100%; /* Juste en dessous de la divSkin */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Évite que le prix s'écrive sur deux lignes */
+    margin-top: 8px;
 }
 .imgSkin{
     width:100%;
     height:auto;
     border-radius:5px;
-    position:absolute;
-    left:50%;
+    position:relative;
     display: block;      
     image-rendering: pixelated;
+    transition: all 0.1s ease;
+    cursor: pointer;
     
+}
+.imgSkin.is-pressed {
+    transform: translateY(4px); 
+    filter: brightness(0.8);
+    box-shadow: inset 0 4px 8px rgba(0,0,0,0.3); /* Optionnel : petite ombre interne */
 }
 /* =============== MACHINE =============== */
 
