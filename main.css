@@ -1,11 +1,5 @@
-/* État par défaut (caché) */
-.overlayDiv {
-    opacity: 0;
-    visibility: hidden; /* Empêche de cliquer dessus quand c'est invisible */
-    background-color: rgba(0, 0, 0, 0.7); /* Ton fond sombre transparent */
-    transition: opacity 0.5s ease, visibility 0.5s; /* 0.5 seconde d'animation */
-    
-    /* Autres styles pour centrer ton menu */
+
+.overplayDiv {
     position: absolute;
     top: 0;
     left: 0;
@@ -16,10 +10,7 @@
 }
 
 /* État quand on ajoute la classe "active" avec JavaScript */
-.overlayDiv.active {
-    opacity: 1;
-    visibility: visible;
-}
+
 .overplayBut{
     height:100%;
     width:100%;
