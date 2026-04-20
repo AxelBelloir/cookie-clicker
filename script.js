@@ -152,8 +152,7 @@ function UPDATE(updater,n) {
 
 function menuOn(div){
     document.getElementById(div).style.display = "block";
-    const overplay = document.getElementById("overplay");
-    overplay.classList.toggle('active');
+    document.getElementById("overplay").style.display = "block";
 }
 function menuOff(){
     document.getElementById("settings").style.display = "none";
