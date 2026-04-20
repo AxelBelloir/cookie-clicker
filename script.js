@@ -152,7 +152,8 @@ function UPDATE(updater,n) {
 
 function menuOn(div){
     document.getElementById(div).style.display = "block";
-    document.getElementById("overplay").style.display = "block";
+    const overplay = document.getElementById("overplay");
+    overplay.classList.toggle('active');
 }
 function menuOff(){
     document.getElementById("settings").style.display = "none";
@@ -180,3 +181,9 @@ async function callAPI(body = {},endpoint){
         return { message: "Erreur", logs: [] };
     }
 }
+
+
+
+
+// ================ CSS ===============
+
