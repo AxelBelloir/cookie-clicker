@@ -208,7 +208,7 @@ body{
 
 .divSkin{
     width:20%;
-    height:auto;
+    height:20%;
     position:relative;
     flex-shrink: 0; 
     flex-grow: 0;  
