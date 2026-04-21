@@ -245,6 +245,10 @@ body{
     pointer-events:none;
     
 }
+.coche{
+    width:20%;
+    height:40%;
+}
 /* =============== MACHINE =============== */
 
 
