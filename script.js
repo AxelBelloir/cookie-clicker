@@ -5,6 +5,8 @@ let nmbCookSec = 0;
 let displayCook = 0;
 let machine = [["pates", 1, 100, 0],["riz", 10, 1000, 0],["sauce", 100, 10000, 0],["salade", 1000, 100000, 0],["frite", 10000, 1000000, 0]]; // [Nom, Production de BASE, Prix, Nombre posseder]
 const machineId = [["patesCompt", "patesPrix"],["rizCompt", "rizPrix"],["sauceCompt", "saucePrix"],["saladeCompt", "saladePrix"],["friteCompt", "fritePrix"]];
+let skinNonDbloquer = [];
+let SkinPosseder = [1];
 
 image.addEventListener('click', function() {
     this.classList.add('img-reduite');
@@ -159,6 +161,39 @@ function menuOff(){
     document.getElementById("succes").style.display = "none";
     document.getElementById("skins").style.display = "none";
     document.getElementById("overplay").style.display = "none";
+}
+function buySkin(skin){
+    
+}
+function skinChange(newSkin){
+    let bool = false;
+    for (let i = 0;i < SkinPosseder.length;++i){
+        if (newSkin == SkinPosseder[i]){
+            bool = true;
+            break;
+        }
+    }
+    if (!bool){
+        bool = false;
+        for(let i = 0; i < skinNonDbloquer.length;++i){
+            if (skinNonDbloquer[i] == newSkin{
+                bool = true;
+                break;
+            }
+            if (!bool){
+                console.log("Ce skin n'existe pas");
+                return;
+            }
+        }
+    }
+    const destination = document.querySelector('objet' + newSkin); 
+    const coche = document.querySelector('.cocheVerte');
+    const rect = destination.getBoundingClientRect();
+    const xCentre = rect.left + (rect.width / 2) - (coche.offsetWidth / 2);
+    const yCentre = rect.top + (rect.height / 2) - (coche.offsetHeight / 2);
+
+    coche.style.left = xCentre + "px";
+    coche.style.top = yCentre + "px";
 }
 /* ==================== API ==================== */
 
