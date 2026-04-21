@@ -176,12 +176,12 @@ function skinChange(newSkin){
     if (!bool){
         bool = false;
         for(let i = 0; i < skinNonDbloquer.length;++i){
-            if (skinNonDbloquer[i] == newSkin{
+            if (skinNonDbloquer[i] == newSkin){
                 bool = true;
                 break;
             }
             if (!bool){
-                consol.log("Ce skin n'existe pas");
+                console.log("Ce skin n'existe pas");
                 return;
             }
         }
