@@ -181,7 +181,7 @@ function skinChange(newSkin){
                 break;
             }
             if (!bool){
-                console.log("Ce skin n'existe pas");
+                consol.log("Ce skin n'existe pas");
                 return;
             }
         }
