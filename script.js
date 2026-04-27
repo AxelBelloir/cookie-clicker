@@ -233,4 +233,6 @@ function cochePosition(idObject){
 
 // ----- Appel de fonction au demmarage ----- //
 
-cochePosition("objet1");
+window.addEventListener('load', () => {
+    cochePosition("settingsBut"); // Utilise l'ID de ton bouton ou image
+});
