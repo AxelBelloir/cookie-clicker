@@ -1,5 +1,5 @@
 const image = document.getElementById('imgCouvreChef');
-let nmbCook = 0;
+let nmbCook = 1000000000000;
 let cookForClick = 1;
 let nmbCookSec = 0;
 let displayCook = 0;
