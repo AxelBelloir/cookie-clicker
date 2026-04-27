@@ -221,3 +221,12 @@ async function callAPI(body = {},endpoint){
 
 // ================ CSS ===============
 
+function cochePosition(idObject){
+    const element = document.querySelector("." + idObject);
+    const rect = element.getBoundingClientRect();
+    const positionY = rect.top + window.scrollY;
+    const positionX = rect.left + window.scrollX;
+    const coche = document.querySelector('.coche');
+    coche.style.left = posX + "px";
+    coche.style.top = posY + "px";
+}
