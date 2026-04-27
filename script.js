@@ -1,5 +1,5 @@
 const image = document.getElementById('imgCouvreChef');
-let nmbCook = 1000000000000000;
+let nmbCook = 100000000000000;
 let cookForClick = 1;
 let nmbCookSec = 0;
 let displayCook = 0;
@@ -227,8 +227,8 @@ function cochePosition(idObject){
     const positionY = rect.top + window.scrollY;
     const positionX = rect.left + window.scrollX;
     const coche = document.querySelector('.coche');
-    coche.style.left = posX + "px";
-    coche.style.top = posY + "px";
+    coche.style.left = positionX + "px";
+    coche.style.top = positionY + "px";
 }
 
 // ----- Appel de fonction au demmarage ----- //
