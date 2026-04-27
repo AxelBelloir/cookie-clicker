@@ -229,6 +229,8 @@ function cochePosition(idObject){
     const coche = document.querySelector('.coche');
     coche.style.left = positionX + "px";
     coche.style.top = positionY + "px";
+    coche.style.width = rect.width + "px";
+    coche.style.height = rect.height + "px";
 }
 
 // ----- Appel de fonction au demmarage ----- //
