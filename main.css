@@ -248,6 +248,9 @@ body{
 .coche{
     width:20%;
     height:40%;
+    position:absolute;
+    left:0px;
+    top:0px;
 }
 /* =============== MACHINE =============== */
 
@@ -305,7 +308,6 @@ body{
   transform: scale(0.92);
   filter: brightness(0.9);
 }
-/* ----- Pates ----- */
 
 .patesP,.rizP,.sauceP,.saladeP,.friteP{
   font-size:30px;
