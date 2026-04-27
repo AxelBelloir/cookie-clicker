@@ -219,7 +219,7 @@ async function callAPI(body = {},endpoint){
 
 
 
-// ================ CSS ===============
+// ================ CSS =============== //
 
 function cochePosition(idObject){
     const element = document.querySelector("." + idObject);
@@ -230,3 +230,7 @@ function cochePosition(idObject){
     coche.style.left = posX + "px";
     coche.style.top = posY + "px";
 }
+
+// ----- Appel de fonction au demmarage ----- //
+
+cochePosition("objet1");
