@@ -186,7 +186,7 @@ function skinChange(newSkin){
             }
         }
     }
-    const destination = document.querySelector('objet' + newSkin); 
+    const destination = document.querySelector('#objet' + newSkin); 
     const coche = document.querySelector('coche');
     const rect = destination.getBoundingClientRect();
     const xCentre = rect.left + (rect.width / 2) - (coche.offsetWidth / 2);
