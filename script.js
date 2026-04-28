@@ -222,5 +222,7 @@ async function callAPI(body = {},endpoint){
 // ----- Appel de fonction au demmarage ----- //
 
 window.addEventListener('load', () => {
-    cochePosition("objet1"); // Utilise l'ID de ton bouton ou image
+    const skinParDefaut = document.getElementById('objet1');
+    if (skinParDefaut) {
+        skinChange(1, skinParDefaut);
 });
