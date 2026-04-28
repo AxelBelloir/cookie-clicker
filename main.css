@@ -258,7 +258,7 @@ body{
 }
 .coche{
     position: absolute; 
-    z-index: 100000;
+    z-index: 1000000;
     pointer-events: none;
 }
 /* =============== MACHINE =============== */
