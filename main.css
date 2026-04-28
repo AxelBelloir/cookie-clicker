@@ -227,7 +227,7 @@ body{
     justify-content: center;
 }
 
-.butSkin.active {
+.butSkin.selected {
     box-shadow: 
         inset 4px 4px 10px rgba(0, 0, 0, 0.5), /* Ombre interne pour l'enfoncement */
         1px 1px 0px #000; /* On réduit l'ombre extérieure */
@@ -255,11 +255,6 @@ body{
     image-rendering: pixelated;
     pointer-events:none;
     
-}
-.coche{
-    position: absolute; 
-    z-index: 1000000;
-    pointer-events: none;
 }
 /* =============== MACHINE =============== */
 
