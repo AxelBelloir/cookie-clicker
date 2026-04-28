@@ -186,14 +186,6 @@ function skinChange(newSkin){
             }
         }
     }
-    const destination = document.querySelector('#objet' + newSkin); 
-    const coche = document.querySelector('coche');
-    const rect = destination.getBoundingClientRect();
-    const xCentre = rect.left + (rect.width / 2) - (coche.offsetWidth / 2);
-    const yCentre = rect.top + (rect.height / 2) - (coche.offsetHeight / 2);
-
-    coche.style.left = xCentre + "px";
-    coche.style.top = yCentre + "px";
 }
 /* ==================== API ==================== */
 
@@ -226,7 +218,7 @@ function cochePosition(idObject){
     const rect = element.getBoundingClientRect();
     const positionY = rect.top + window.scrollY;
     const positionX = rect.left + window.scrollX;
-    const coche = document.querySelector('.coche');
+    const coche = document.querySelector('#coche');
     coche.style.left = positionX + "px";
     coche.style.top = positionY + "px";
     coche.style.width = rect.width + "px";
