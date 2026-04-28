@@ -165,7 +165,7 @@ function menuOff(){
 function buySkin(skin){
     
 }
-function skinChange(newSkin){
+function skinChange(newSkin, element){
     let bool = false;
     for (let i = 0;i < SkinPosseder.length;++i){
         if (newSkin == SkinPosseder[i]){
@@ -218,18 +218,6 @@ async function callAPI(body = {},endpoint){
 
 
 // ================ CSS =============== //
-
-function cochePosition(idObject){
-    const element = document.querySelector("#" + idObject);
-    const rect = element.getBoundingClientRect();
-    const positionY = rect.top + window.scrollY;
-    const positionX = rect.left + window.scrollX;
-    const coche = document.querySelector('#coche');
-    coche.style.left = positionX + "px";
-    coche.style.top = positionY + "px";
-    coche.style.width = rect.width + "px";
-    coche.style.height = rect.height + "px";
-}
 
 // ----- Appel de fonction au demmarage ----- //
 
