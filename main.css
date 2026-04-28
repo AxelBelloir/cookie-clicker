@@ -229,11 +229,11 @@ body{
 
 .butSkin.selected {
     box-shadow: 
-        inset 4px 4px 10px rgba(0, 0, 0, 0.5), /* Ombre interne pour l'enfoncement */
-        1px 1px 0px #000; /* On réduit l'ombre extérieure */
-    transform: translate(2px, 2px); /* On le décale légèrement vers le bas */
-    filter: brightness(0.8); /* On l'assombrit un peu */
-    border: 2px solid #FFD700; /* Optionnel : une bordure pour bien voir la sélection */
+        inset 4px 4px 10px rgba(0, 0, 0, 0.5), 
+        1px 1px 0px #000; 
+    transform: translate(2px, 2px); 
+    filter: brightness(0.8); 
+    border: 2px solid #E6E6E6; 
 }
 
 .prixSkin{
