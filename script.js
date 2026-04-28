@@ -184,8 +184,14 @@ function skinChange(newSkin){
                 console.log("Ce skin n'existe pas");
                 return;
             }
+    
         }
+    
     }
+    const tousLesSkins = document.querySelectorAll('.butSkin');
+    tousLesSkins.forEach(btn => btn.classList.remove('selected'));
+    element.classList.add('selected');
+    cochePosition(element.id);
 }
 /* ==================== API ==================== */
 
