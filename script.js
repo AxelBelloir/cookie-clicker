@@ -8,21 +8,6 @@ const machineId = [["patesCompt", "patesPrix"],["rizCompt", "rizPrix"],["sauceCo
 let skinNonDbloquer = [];
 let SkinPosseder = [1];
 
-function cochePosition(idObject) {
-    const element = document.getElementById(idObject);
-    const coche = document.getElementById('coche'); // Utilise bien l'ID avec #
-    
-    if (!element || !coche) return;
-
-    const rect = element.getBoundingClientRect();
-    
-    // Positionnement par rapport au scroll de la page
-    coche.style.left = (rect.left + window.scrollX) + "px";
-    coche.style.top = (rect.top + window.scrollY) + "px";
-    coche.style.width = rect.width + "px";
-    coche.style.height = rect.height + "px";
-    coche.style.display = "block"; // On l'affiche
-}
 
 image.addEventListener('click', function() {
     this.classList.add('img-reduite');
@@ -207,7 +192,6 @@ function skinChange(newSkin, element){
     const tousLesSkins = document.querySelectorAll('.butSkin');
     tousLesSkins.forEach(btn => btn.classList.remove('selected'));
     element.classList.add('selected');
-    cochePosition(element.id);
 }
 /* ==================== API ==================== */
 
