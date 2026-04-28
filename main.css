@@ -246,12 +246,9 @@ body{
     
 }
 .coche{
-    width:20%;
-    height:40%;
-    position:absolute;
-    left:0px;
-    top:0px;
-    z-index:100000;
+    position: absolute; 
+    z-index: 100000;
+    pointer-events: none;
 }
 /* =============== MACHINE =============== */
 
