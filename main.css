@@ -270,7 +270,7 @@ body{
   align-items: stretch;     
   align-items: center;     
 }
-.but-machine, .but-menu, .butSkin{
+.but-machine, .but-menu{
   height: 100%;
   width: 100%;
   border-radius: 0px; 
