@@ -225,4 +225,5 @@ window.addEventListener('load', () => {
     const skinParDefaut = document.getElementById('objet1');
     if (skinParDefaut) {
         skinChange(1, skinParDefaut);
+    }
 });
