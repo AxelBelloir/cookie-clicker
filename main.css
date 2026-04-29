@@ -233,7 +233,7 @@ body{
         1px 1px 0px #000; 
     transform: translate(2px, 2px); 
     filter: brightness(0.8); 
-    border: 2px solid black; 
+    border: 2px solid white; 
 }
 
 .prixSkin{
