@@ -180,6 +180,7 @@ body{
     transform:translate(-50%, -50%);
     z-index:10000;
     background-color:white;
+    border-radius:10px;
 }
 .titre-menu{
     font-size:40px;
@@ -233,7 +234,7 @@ body{
         1px 1px 0px #000; 
     transform: translate(2px, 2px); 
     filter: brightness(0.8); 
-    border: 2px solid white; 
+    border: 2px solid black; 
 }
 
 .prixSkin{
