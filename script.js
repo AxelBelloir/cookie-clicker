@@ -222,8 +222,10 @@ async function callAPI(body = {},endpoint){
 // ----- Appel de fonction au demmarage ----- //
 
 window.addEventListener('load', () => {
+    setTimeout(() => {
     const skinParDefaut = document.getElementById('objet1');
     if (skinParDefaut) {
         skinChange(1, skinParDefaut);
     }
+    }, 50);
 });
