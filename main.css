@@ -186,7 +186,7 @@ body{
     font-size:40px;
     position:absolute;
     left:50%;
-    top:15%;
+    top:10%;
     transform:translateX(-50%);
     color:black;
 }
@@ -197,8 +197,8 @@ body{
     left:50%;
     bottom:15px;
     transform:translateX(-50%);
-    width:90%;
-    height:60%;
+    width:80%;
+    height:70%;
     overflow-y: auto; 
     overflow-x: hidden;
     display: flex;
