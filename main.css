@@ -182,13 +182,16 @@ body{
     background-color:white;
     border-radius:10px;
 }
-.titre-menu{
-    font-size:40px;
-    position:absolute;
-    left:50%;
-    top:10%;
-    transform:translateX(-50%);
-    color:black;
+.titre-menu {
+    font-size: 40px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    margin: 0;         
+    white-space: nowrap; 
+    text-align: center;
 }
 /* ----- SKIN ----- */
 
