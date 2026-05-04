@@ -217,7 +217,7 @@ body{
     padding: 10px;
 }
 
-.divSkin {
+.divSkin, .divSucces {
     width: 120px; /* Largeur fixe pour que le centrage soit propre */
     height: 120px; 
     position: relative;
@@ -226,7 +226,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.butSkin{
+.butSkin, .butSucces{
     width: 100%;
     height: 100%;
     background: none;
@@ -239,7 +239,7 @@ body{
     justify-content: center;
 }
 
-.butSkin.selected {
+.butSkin.selected ,.butSucces.selected{
     box-shadow: 
         inset 4px 4px 10px rgba(0, 0, 0, 0.5), 
         1px 1px 0px #000; 
@@ -248,7 +248,7 @@ body{
     border: 2px solid black; 
 }
 
-.prixSkin{
+.prixSkin, titleSucces{
     font-size: 14px;
     font-weight: bold;
     position: absolute;
@@ -258,7 +258,7 @@ body{
     white-space: nowrap; /* Évite que le prix s'écrive sur deux lignes */
     margin-top: 8px;
 }
-.imgSkin{
+.imgSkin, .imgSucces{
     width:100%;
     height:auto;
     border-radius:5px;
