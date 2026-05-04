@@ -278,7 +278,7 @@ async function callAPI(body = {},endpoint){
 
 window.addEventListener('load', () => {
     setTimeout(() => {
-    const skinParDefaut = document.getElementById('objet1');
+    const skinParDefaut = document.getElementById('butObjet1');
     if (skinParDefaut) {
         skinChange(1, skinParDefaut);
     }
