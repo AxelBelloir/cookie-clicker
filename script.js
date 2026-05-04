@@ -7,6 +7,38 @@ let machine = [["pates", 1, 100, 0],["riz", 10, 1000, 0],["sauce", 100, 10000, 0
 const machineId = [["patesCompt", "patesPrix"],["rizCompt", "rizPrix"],["sauceCompt", "saucePrix"],["saladeCompt", "saladePrix"],["friteCompt", "fritePrix"]];
 let skinNonDbloquer = [];
 let SkinPosseder = [1];
+const succesList = [
+    [
+        "Pro des pates",
+        100,
+        "divSuccesPates",
+        "patesSkin"
+    ],
+    [
+        "Pro du riz",
+        100,
+        "divSuccesRiz",
+        "rizSkin"
+    ],
+    [
+        "Pro des sauces",
+        100,
+        "divSuccesSauce",
+        "sauceSkin"
+    ],
+    [
+        "Pro des salades",
+        100,
+        "divSuccesSalade",
+        "saladeSkin"
+    ],
+    [
+        "Pro des frites",
+        100,
+        "divSuccesFrites",
+        "friteSkin"
+    ]
+]
 
 
 image.addEventListener('click', function() {
@@ -117,6 +149,9 @@ window.machineBuy = function(machineChoose) {
     let prodDeLaMachine = machine[index][1];
 
     if (nmbCook < prixActuel) {
+        const prixEl = document.getElementById(machineId[index][1]);
+        prixEl.classList.add('shake');
+        setTimeout(() => prixEl.classList.remove('shake'), 500);
         console.log("Pas assez d'argent !");
         return;
     }
@@ -192,6 +227,26 @@ function skinChange(newSkin, element){
     const tousLesSkins = document.querySelectorAll('.butSkin');
     tousLesSkins.forEach(btn => btn.classList.remove('selected'));
     element.classList.add('selected');
+}
+
+function succes(suc){
+    let bool = false;
+    let index = 0;
+    for(let i = 0;i< succesList.length; ++i){
+        if(succesList[i][0] == suc[0]){
+            bool = true;
+            index = i;
+        }
+    }
+    if(!bool){
+        console.log("Ce succes n'existe pas");
+        return;
+    }
+    if(suc[1] < succesList[index][1]){
+        return;
+    }
+    document.getElementById(succesList[index][2]).style.display = "block";
+    
 }
 /* ==================== API ==================== */
 
