@@ -149,9 +149,9 @@ window.machineBuy = function(machineChoose) {
     let prodDeLaMachine = machine[index][1];
 
     if (nmbCook < prixActuel) {
-        const prixEl = document.getElementById(machineId[index][1]);
-        prixEl.classList.add('shake');
-        setTimeout(() => prixEl.classList.remove('shake'), 500);
+        const divEL = document.getElementById(machineId[index][2]);
+        divEL.classList.add('shake');
+        setTimeout(() => divEL.classList.remove('shake'), 500);
         console.log("Pas assez d'argent !");
         return;
     }
