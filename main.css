@@ -185,7 +185,7 @@ body{
 .titre-menu {
     font-size: 40px;
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     color: black;
