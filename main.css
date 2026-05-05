@@ -38,6 +38,7 @@
 }
 
 body{
+  zoom: 0.8;
   font-family: 'PolicePixel',sans-serif;
   
   image-rendering: pixelated;
