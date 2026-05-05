@@ -207,7 +207,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     overflow-y: auto; 
@@ -217,8 +217,8 @@ body{
 }
 
 .divSkin, .divSucces {
-    width: 120px;
-    min-width: 120px; 
+    width: 10%;
+    min-width: 200px; 
     height: 120px;
     position: relative;
     flex-shrink: 0;
