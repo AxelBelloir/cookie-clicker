@@ -8,39 +8,13 @@ const machineId = [["patesCompt", "patesPrix","patesDiv"],["rizCompt", "rizPrix"
 let skinNonDbloquer = [];
 let SkinPosseder = [1];
 const succesList = [
-    [
-        "Pro des pates",
-        100,
-        "divSuccesPates",
-        "patesSkin"
-    ],
-    [
-        "Pro du riz",
-        100,
-        "divSuccesRiz",
-        "rizSkin"
-    ],
-    [
-        "Pro des sauces",
-        100,
-        "divSuccesSauce",
-        "sauceSkin"
-    ],
-    [
-        "Pro des salades",
-        100,
-        "divSuccesSalade",
-        "saladeSkin"
-    ],
-    [
-        "Pro des frites",
-        100,
-        "divSuccesFrites",
-        "friteSkin"
-    ]
+    // [ {Nom du suces} , {objectif} , {id} ] //
+    ["Pro des pates",100,"1"],
+    ["Pro du riz",100,"2"],
+    ["Pro des sauces",100,"3"],
+    ["Pro des salades",100,"4"],
+    ["Pro des frites",100,"5"]
 ]
-
-
 image.addEventListener('click', function() {
     this.classList.add('img-reduite');
     nmbCook += cookForClick;
@@ -159,6 +133,7 @@ window.machineBuy = function(machineChoose) {
     nmbCookSec += prodDeLaMachine;
     machine[index][2] = Math.ceil(prixActuel * 1.15);
     machine[index][3] += 1;
+    succes([succesList[index][0],machine[index][3]]);
     UPDATE([[machine[index][3], machine[index][2]]],[true,index]); 
 };
 
@@ -245,7 +220,8 @@ function succes(suc){
     if(suc[1] < succesList[index][1]){
         return;
     }
-    document.getElementById(succesList[index][2]).style.display = "block";
+    document.getElementById("imgSuccesBloque" + succesList[index][2]).style.display = "none";
+    document.getElementById("imgSucces" + succesList[index][2]).style.display = "block";
     
 }
 /* ==================== API ==================== */
