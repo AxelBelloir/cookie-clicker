@@ -216,7 +216,7 @@ body{
 }
 
 .divSkin, .divSucces {
-    width: 10%;
+    width: 20%;
     height: 120px;
     position: relative;
     flex-shrink: 0;
