@@ -202,15 +202,16 @@ body{
     bottom: 15px;
     transform: translateX(-50%);
     width: 90%;
-    height: 70%;
+    height: 70%; 
     display: flex;
-    flex-direction: row;
+    flex-direction: column; 
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-start; 
     align-items: center;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto; 
+    overflow-x: hidden; 
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .divSkin, .divSucces {
