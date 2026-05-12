@@ -78,7 +78,15 @@ CORS(app)
 @app.route("/api/save", methods=["POST"])
 
 def save():
-    return jsonify({message : "rien"})
+    data = request.get_json()
+    nmbCook = data["nmbCook"]
+    cookForClick = data["cookForClick"]
+    nmbCookSec = data["nmbCookSec"]
+    displayCook = data["displayCook"]
+    machine = data["machine"]
+    skinNonDbloquer = data["skinNonDbloquer"]
+    SkinPosseder = data["SkinPosseder"]
+    IP = data["IP"]
 @app.route("/api/load", methods=["POST"])
 
 def load():
