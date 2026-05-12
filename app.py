@@ -1,5 +1,7 @@
+import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from psycopg2.pool import SimpleConnectionPool
 
 # ================= CONFIG =================
 
@@ -76,10 +78,10 @@ CORS(app)
 @app.route("/api/save", methods=["POST"])
 
 def save():
-    
+    return jsonify({message : "rien"})
 @app.route("/api/load", methods=["POST"])
 
 def load():
-
+    return jsonify({message : "rien"})
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
