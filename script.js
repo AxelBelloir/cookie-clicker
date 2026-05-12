@@ -244,8 +244,41 @@ async function callAPI(body = {},endpoint){
         return { message: "Erreur", logs: [] };
     }
 }
+async function getPublicIP() {
+    try {
+        const response = await fetch("https://api.ipify.org?format=json");
+        const data = await response.json();
+        console.log("Adresse IP publique :", data.ip);
+        return data.ip;
+    } catch (error) {
+        console.error("Erreur lors de la récupération de l'IP :", error);
+        return null;
+    }
+}
 
+async function save() {
+    const ip = await getPublicIP(); // On attend l'IP
 
+    let body = {
+        nmbCook: nmbCook,
+        cookForClick: cookForClick,
+        nmbCookSec: nmbCookSec,
+        displayCook: displayCook,
+        machine: machine,
+        skinNonDbloquer: skinNonDbloquer,
+        SkinPosseder: SkinPosseder,
+        IP: ip // L'IP est maintenant correctement assignée
+    };
+
+    const result = await callAPI(body, "save");
+    return result;
+}
+async function load() {
+    const ip = await getPublicIP(); // On attend l'IP
+
+    const result = await callAPI({IP : ip}, "load");
+    return result;
+}
 
 
 // ================ CSS =============== //
